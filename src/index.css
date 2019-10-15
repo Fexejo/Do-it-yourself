@@ -1,0 +1,13 @@
+/**
+	Stylesheet fuer Do it yourself! von FeXeJo in der Vorlesung Web-Programmierung.
+*/
+
+/* Einstellungen fuer das grundlegende Layout, das fuer alle Bereiche benoetigt wird. */
+
+h1 {
+	text-decoration: underline;
+}
+
+.hidden {
+	display: none;
+}
