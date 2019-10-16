@@ -31,8 +31,7 @@ class Anzeigen {
     
         return {
             className: "anz",
-            topbar: null,
-            main: document.querySelectorAll("#anzeigen > *"),
+            main: section.querySelectorAll("main > *"),
         };
     }
 

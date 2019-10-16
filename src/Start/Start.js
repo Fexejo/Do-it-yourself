@@ -3,18 +3,15 @@
 import stylesheet from "./Start.css";
 
 /**
- * View zur Anzeige und Suche der Moebelstuecke.
- * ID des Moebelstuecks als GET-Parameter uebergeben.
- * Bei keinem Parameter die Suche anzeigen.
+ *  Startseite der App.
  */
 class Start {
     /**
      * Konstruktor.
      * @param {Objekt} app Zentrales App-Objekt der Anwendung
      */
-    constructor(app, id) {
+    constructor(app) {
         this._app = app;
-        this._id = id;
     }
 
     /**
@@ -30,9 +27,8 @@ class Start {
         let section = document.querySelector("#start").cloneNode(true);
 
         return {
-            className: "sta",
-            topbar: null,
-            main: document.querySelectorAll("#start > *"),
+            className: "start",
+            main: section.querySelectorAll("main > *"),
         };
     }
 
@@ -53,7 +49,7 @@ class Start {
      * @return {String} Titel für die Titelzeile des Browsers
      */
     get title() {
-        return "willkommen";
+        return "Willkommen";
     }
 }
 

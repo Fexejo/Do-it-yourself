@@ -6,16 +6,15 @@
 	<script src="./index.js" type="text/javascript"></script>
 </head>
 <body>
-	<nav>
-
-	</nav>
 	<section id="app">
 		<header>
 			<nav>
-				<a href="" data-navigo>Start</a>
-				<a href="editieren" data-navigo>Neu</a>
-				<a href="anzeigen" data-navigo>Suchen</a>
-				<a href="materialliste" data-navigo>Materialliste</a>
+				<a href="/" data-navigo>Start</a>
+				<a href="/editieren/" data-navigo>Neu</a>
+				<a href="/suchen/" data-navigo>Suchen</a>
+				<a href="/suchen/SearchString/" data-navigo>Suchen mit Param</a>
+				<a href="/anzeigen/4/" data-navigo>Anzeigen4</a>
+				<a href="/materialliste/" data-navigo>Materialliste</a>
 			</nav>
 		</header>
 		<main>
@@ -24,71 +23,81 @@
 	</section>
 
 	<section id="start" class="hidden">
-		<div>
-		<h2>Willkommen bei Do it Yourself!</h2>
-		</div>
-		<!--
-		hier noch überlegen, ob wir den Divs eine ID geben
-		-->!
-		<div>
-			<h3> Halli Hallo liebe Heimhandwerker! </h3>
-			<p>
-				Schön, dass ihr auf unserer super duper tollen Webseite vorbeischaut.
-				Ihr seid leidenschaftliche Heimhandwerker und seid auf der Suche nach super duper tollen Projektideen?
-				Oder hattet ihr eine eigene richtig super duper tolle Kration und möchtet diese mit dem rest der Welt teilen?
-				Dann seid ihr hier genau richtig!
-				Do-it-yourself bietet euch verschiedenste Funktionen. Dazu gehören zum einen das Hinzufügen von euren eigenen Ideen sowie
-			 	Suchfunktion um eure eigene Chreativität etwas ankubeln.
-				Jeder Eintrag enthält eine genaue Bauanleitung mit beigefügter Materialliste.
-				Ganzeinfach zum Nachbauen!
-				Und jetzt kommt der Hammer: Ihr könnt euch sogar die anfallenden Kosten für die unterschiedlichen Projekte anzeigen lassen!
-				Da Feedback von großer Bedeutung für uns ist, besteht für euch die Möglichkeit Kommentare zu den einzelnen Einrägen zu verfassen.
-				Vielen lieben Dank und super viel Spaß wünscht euch
-
-				<p>euer Do-it-Yourself Team </p>
-			</p>
-		</div>
-		<!--
- hier kommen die 3 Hauptbuttons
-		-->
-		<div>
-			eigene Kreationen hinzufügen
+		<main>
+			<div>
+				<h2>Willkommen bei Do it Yourself!</h2>
+			</div>
 			<!--
-	hier muss noch das Bild zum Button eigefügt werden
-	<img src=“./Bilder/Hinzufuegen.PNG“ alt=“Hinzufügenbutton“>
-			-->
-		</div>
-		<div>
-			nach Kreationen suchen
+			hier noch überlegen, ob wir den Divs eine ID geben
+			-->!
+			<div>
+				<h3> Halli Hallo liebe Heimhandwerker! </h3>
+				<p>
+					Schön, dass ihr auf unserer super duper tollen Webseite vorbeischaut.
+					Ihr seid leidenschaftliche Heimhandwerker und seid auf der Suche nach super duper tollen Projektideen?
+					Oder hattet ihr eine eigene richtig super duper tolle Kration und möchtet diese mit dem rest der Welt teilen?
+					Dann seid ihr hier genau richtig!
+					Do-it-yourself bietet euch verschiedenste Funktionen. Dazu gehören zum einen das Hinzufügen von euren eigenen Ideen sowie
+				 	Suchfunktion um eure eigene Chreativität etwas ankubeln.
+					Jeder Eintrag enthält eine genaue Bauanleitung mit beigefügter Materialliste.
+					Ganzeinfach zum Nachbauen!
+					Und jetzt kommt der Hammer: Ihr könnt euch sogar die anfallenden Kosten für die unterschiedlichen Projekte anzeigen lassen!
+					Da Feedback von großer Bedeutung für uns ist, besteht für euch die Möglichkeit Kommentare zu den einzelnen Einrägen zu verfassen.
+					Vielen lieben Dank und super viel Spaß wünscht euch
+	
+					<p>euer Do-it-Yourself Team </p>
+				</p>
+			</div>
 			<!--
-	hier muss noch das Bild zum Button eigefügt werden
-	<img src=“./Bilder/ANDERER NAME HIER !!!! .PNG“ alt=“ANDERER NAME HIER !!!!“>
+				hier kommen die 3 Hauptbuttons
 			-->
-		</div>
-		<div>
-			Materialliste anzeigen
-			<!--
-	hier muss noch das Bild zum Button eigefügt werden
-	<img src=“./Bilder/ANDERER NAME HIER !!!!.PNG“ alt=“ANDERER NAME HIER !!!!“>
-			-->
-		</div>
-
+			<div>
+				eigene Kreationen hinzufügen
+				<!--
+				hier muss noch das Bild zum Button eigefügt werden
+				<img src=“./Bilder/Hinzufuegen.PNG“ alt=“Hinzufügenbutton“>
+				-->
+			</div>
+			<div>
+				nach Kreationen suchen
+				<!--
+		hier muss noch das Bild zum Button eigefügt werden
+		<img src=“./Bilder/ANDERER NAME HIER !!!! .PNG“ alt=“ANDERER NAME HIER !!!!“>
+				-->
+			</div>
+			<div>
+				Materialliste anzeigen
+				<!--
+		hier muss noch das Bild zum Button eigefügt werden
+		<img src=“./Bilder/ANDERER NAME HIER !!!!.PNG“ alt=“ANDERER NAME HIER !!!!“>
+				-->
+			</div>
+		</main>
 	</section>
 
 
 	<section id="editieren" class="hidden">
-		<h2>edit</h2>
-	</section
+		<main>
+			<h2>edit</h2>
+		</main>
+	</section>
+	
 	<section id="suchen" class="hidden">
-		<h2>Suche</h2>
+		<main>
+			<h2>Suche</h2>
+		</main>
 	</section>
 
 	<section id="anzeigen" class="hidden">
-		<h2>anzeigen</h2>
+		<main>
+			<h2>anzeigen</h2>
+		</main>
 	</section>
 
 	<section id="materialliste" class="hidden">
-		<h2>mat</h2>
+		<main>
+			<h2>mat</h2>
+		</main
 	</section>
 </body>
 </html>
