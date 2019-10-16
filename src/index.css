@@ -11,3 +11,22 @@ h1 {
 .hidden {
 	display: none;
 }
+
+#app header {
+	display: flex;
+	border: 1px solid red;
+	justify-content: center;
+}
+
+#app header a {
+	
+}
+
+#app img {
+	
+}
+
+/* aktuell ausgewaehlter Button */
+#app .active {
+	
+}

@@ -28,8 +28,8 @@ class Materialliste {
 
 	    return {
 	        className: "mat",
-	        topbar: section.querySelectorAll("header > *"),
-	        main: section.querySelectorAll("main > *"),
+	        topbar: null,
+	        main: document.querySelectorAll("#materialliste > *"),
 	    };
     }
 

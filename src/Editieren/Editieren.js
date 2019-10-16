@@ -30,8 +30,8 @@ class Editieren {
 
     return {
         className: "edit",
-        topbar: section.querySelectorAll("header > *"),
-        main: section.querySelectorAll("main > *"),
+        topbar: null,
+        main: document.querySelectorAll("#editieren > *"),
     };
     }
 

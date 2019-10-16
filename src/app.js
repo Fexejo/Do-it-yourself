@@ -109,6 +109,7 @@ class App {
      * @param {Object} content Objekt mit den anzuzeigenden DOM-Elementen
      */
     _switchVisibleContent(content) {
+        console.log("switchVisibleContent()");
         // <header> und <main> des HTML-Grundgerüsts ermitteln
         let app = document.querySelector("#app");
         let header = document.querySelector("#app > header");
@@ -117,7 +118,7 @@ class App {
         // Zuvor angezeigte Inhalte entfernen
         // Bei der Topbar nur die untere Zeile, im Hauptbereich alles!
         app.className = "";
-        header.querySelectorAll(".bottom").forEach(e => e.parentNode.removeChild(e));
+        //header.querySelectorAll(".bottom").forEach(e => e.parentNode.removeChild(e));
         main.innerHTML = "";
     
         // CSS-Klasse übernehmen, um die viewspezifischen CSS-Regeln zu aktivieren
