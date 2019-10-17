@@ -3,18 +3,17 @@
 import stylesheet from "./Suchen.css";
 
 /**
- * View zur Anzeige und Suche der Moebelstuecke.
- * ID des Moebelstuecks als GET-Parameter uebergeben.
- * Bei keinem Parameter die Suche anzeigen.
+ * View zur Suche der Moebelstuecke.
+ * Falls ein Suchstring als Parameter uebergeben wird, Suche sofort ausfuehren.
  */
 class Suchen {
     /**
      * Konstruktor.
      * @param {Objekt} app Zentrales App-Objekt der Anwendung
      */
-    constructor(app, id) {
+    constructor(app, searchString) {
         this._app = app;
-        this._id = id;
+        this._searchString = searchString;
     }
 
     /**
@@ -30,9 +29,8 @@ class Suchen {
         let section = document.querySelector("#suchen").cloneNode(true);
 
         return {
-            className: "suc",
-            topbar: null,
-            main: document.querySelectorAll("#suchen > *"),
+            className: "suchen",
+            main: section.querySelectorAll("main > *"),
         };
     }
 
@@ -53,7 +51,7 @@ class Suchen {
      * @return {String} Titel für die Titelzeile des Browsers
      */
     get title() {
-        return "suchen";
+        return "Suchen: " + this._searchString;
     }
 }
 

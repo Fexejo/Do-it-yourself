@@ -9,7 +9,9 @@
 import Navigo from "navigo/lib/navigo.js";
 
 // Viewklassen laden
+import Start from "./Start/Start.js";
 import Editieren from "./Editieren/Editieren.js";
+import Suchen from "./Suchen/Suchen.js";
 import Anzeigen from "./Anzeigen/Anzeigen.js";
 import Materialliste from "./Materialliste/Materialliste.js";
 
@@ -29,8 +31,10 @@ class App {
         this._navAborted = false;
     
         this._router.on({
-            "*":                    () => this.showEditieren(""),
+            "*":                    () => this.showStart(""),
             "/editieren/":           () => this.showEditieren(""),
+            "/suchen/":             () => this.showSuchen(""),
+            "/suchen/:searchString/": params => this.showSuchen(params.searchString),
             "/anzeigen/":            () => this.showAnzeigen(""),
             "/anzeigen/:id/":        params => this.showAnzeigen(params.id),
             "/materialliste/":       () => this.showMaterialliste(),
@@ -79,11 +83,14 @@ class App {
             this._navAborted = true;
             return false;
         }
-    console.log("View wechseln: " + view.title);
+        
+        console.log("View wechseln: " + view.title);
         // Alles klar, aktuelle View nun wechseln
         document.title = `${this._title} – ${view.title}`;
     
         this._currentView = view;
+        this._switchVisibleContent(view.onShow());
+        return true;
     }
     
     
@@ -109,7 +116,7 @@ class App {
      * @param {Object} content Objekt mit den anzuzeigenden DOM-Elementen
      */
     _switchVisibleContent(content) {
-        console.log("switchVisibleContent()");
+        
         // <header> und <main> des HTML-Grundgerüsts ermitteln
         let app = document.querySelector("#app");
         let header = document.querySelector("#app > header");
@@ -140,10 +147,23 @@ class App {
                 main.appendChild(element);
             });
         }
+        
+        // Navigo an die Links in der View binden
+        this._router.updatePageLinks();
+    }
+    
+    showStart() {
+        let view = new Start(this);
+        this._switchVisibleView(view);
     }
     
     showEditieren (id) {
-        let view = new Editieren(this);
+        let view = new Editieren(this, id);
+        this._switchVisibleView(view);
+    }
+    
+    showSuchen(searchString) {
+        let view = new Suchen(this, searchString);
         this._switchVisibleView(view);
     }
     

@@ -12,8 +12,9 @@ class Editieren {
      * Konstruktor.
      * @param {Objekt} app Zentrales App-Objekt der Anwendung
      */
-    constructor(app) {
+    constructor(app, id) {
         this._app = app;
+        this._id = id;
     }
 
     /**
@@ -30,8 +31,7 @@ class Editieren {
 
     return {
         className: "edit",
-        topbar: null,
-        main: document.querySelectorAll("#editieren > *"),
+        main: section.querySelectorAll("main > *"),
     };
     }
 
