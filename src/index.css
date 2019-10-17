@@ -3,7 +3,9 @@
 */
 
 /* Einstellungen fuer das grundlegende Layout, das fuer alle Bereiche benoetigt wird. */
-
+body{
+	background: <img src="./Bilder/HandwerkerHintergrund.PNG" alt="Hintergrundbild">
+}
 h1 {
 	text-decoration: underline;
 }
@@ -14,19 +16,29 @@ h1 {
 
 #app header {
 	display: flex;
-	border: 1px solid red;
+	border: 1px solid black;
 	justify-content: center;
+	background-color: orange;
+	padding: 1.5em;
 }
 
 #app header a {
-	
+	font-size: 30px;
+	margin-right: 1em;
+	color: black;
+	text-decoration: none;
+
+}
+
+a:hover{
+	background-color: grey;
 }
 
 #app img {
-	
+
 }
 
 /* aktuell ausgewaehlter Button */
 #app .active {
-	
+
 }
