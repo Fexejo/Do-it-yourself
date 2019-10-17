@@ -29,6 +29,7 @@ class Suchen {
         let section = document.querySelector("#suchen").cloneNode(true);
 
         return {
+            button: 3,
             className: "suchen",
             main: section.querySelectorAll("main > *"),
         };

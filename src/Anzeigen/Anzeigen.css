@@ -1,0 +1,5 @@
+/* Alle Selektoren müssen mit .anzeigen beginnen */
+
+.anzeigen {
+	background-color: blue;
+}

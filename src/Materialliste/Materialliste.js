@@ -27,7 +27,8 @@ class Materialliste {
         let section = document.querySelector("#materialliste").cloneNode(true);
 
 	    return {
-	        className: "mat",
+button: 4,
+	        className: "materialliste",
 	        main: section.querySelectorAll("main > *"),
 	    };
     }

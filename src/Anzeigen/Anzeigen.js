@@ -30,7 +30,8 @@ class Anzeigen {
         let section = document.querySelector("#anzeigen").cloneNode(true);
     
         return {
-            className: "anz",
+            button: 3,
+            className: "anzeigen",
             main: section.querySelectorAll("main > *"),
         };
     }

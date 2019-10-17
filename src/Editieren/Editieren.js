@@ -30,7 +30,8 @@ class Editieren {
         let section = document.querySelector("#editieren").cloneNode(true);
 
     return {
-        className: "edit",
+        button: 2,
+        className: "editieren",
         main: section.querySelectorAll("main > *"),
     };
     }

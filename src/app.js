@@ -7,6 +7,7 @@
 
 // Navigo fuer Routing laden
 import Navigo from "navigo/lib/navigo.js";
+import Overlay from "./Overlay.js";
 
 // Viewklassen laden
 import Start from "./Start/Start.js";
@@ -22,6 +23,7 @@ class App {
      * Konstruktor.
      */
     constructor() {
+        this.overlay = new Overlay();
         this._title = "Do it yourself!";
         this._currentView = null;
     
@@ -124,10 +126,18 @@ class App {
     
         // Zuvor angezeigte Inhalte entfernen
         // Bei der Topbar nur die untere Zeile, im Hauptbereich alles!
+        header.querySelectorAll("img").forEach(b =>{
+            b.className = "";
+        });
         app.className = "";
-        //header.querySelectorAll(".bottom").forEach(e => e.parentNode.removeChild(e));
         main.innerHTML = "";
-    
+        
+        // Klasse .active dem entsprechenden Button geben
+        if (content && content.button) {
+            header.querySelectorAll("img")[content.button - 1].classList.add("active");
+            console.log(header.querySelectorAll("img"));//[content.button].classList.add(".active");
+        }
+        
         // CSS-Klasse übernehmen, um die viewspezifischen CSS-Regeln zu aktivieren
         if (content && content.className) {
             app.className = content.className;

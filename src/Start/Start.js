@@ -25,8 +25,9 @@ class Start {
      */
     onShow() {
         let section = document.querySelector("#start").cloneNode(true);
-
+        
         return {
+            button: 1,
             className: "start",
             main: section.querySelectorAll("main > *"),
         };
@@ -43,6 +44,12 @@ class Start {
      */
     onLeave(goon) {
         return true;
+        if (confirm("Verlassen?")) {
+            return true;
+        }
+        
+        document.querySelector("#app > main").addEventListener("mousemove", goon);
+        return false;
     }
 
     /**
