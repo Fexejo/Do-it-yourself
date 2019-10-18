@@ -3,3 +3,14 @@
 .editieren {
 	background-color: orange;
 }
+
+
+
+/* Aenderungen fuer Tablets */
+@media (min-width: 992px) {
+
+}
+
+/*  Aenderungen fuer Desktops */
+@media (min-width: 1200px) {
+}

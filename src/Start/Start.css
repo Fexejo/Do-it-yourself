@@ -83,3 +83,14 @@ font-size: 17pt;
   color: orange;
   font-style: italic;
 }
+
+
+
+/* Aenderungen fuer Tablets */
+@media (min-width: 992px) {
+
+}
+
+/*  Aenderungen fuer Desktops */
+@media (min-width: 1200px) {
+}

@@ -62,11 +62,11 @@ body{
 	height: 100%;
 }
 
-/* Tablets */
+/* Aenderungen fuer Tablets */
 @media (min-width: 992px) {
 
 }
 
-/* Desktops */
+/*  Aenderungen fuer Desktops */
 @media (min-width: 1200px) {
 }
