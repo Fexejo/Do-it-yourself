@@ -1,0 +1,90 @@
+html {
+
+font-family: sans-serif;
+font-size: 12pt;
+
+}
+
+main{
+background-color: #F2F5A9;
+border-left:40px solid #F2F5A9;
+border-right:40px solid #F2F5A9;
+
+}
+
+main h3 {
+  font-family: sans-serif;
+  font-size: 12pt;
+  color: inherit;
+
+}
+main h2 {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 30pt;
+  color: inherit
+}
+img{
+  width: 7%;
+  height: 7%;
+}
+
+#button1{
+display: inline;
+margin-left:300px;
+margin-right:380px;
+margin-top: 30px;
+display: inline-block;
+border-width: 2px;
+border-style: solid;
+border-color: black;
+padding-left: 70px;
+padding-top: 20px;
+padding-bottom: 20px;
+font-size: 17pt;
+}
+
+#button1:hover{
+  color: orange;
+  font-style: italic;
+}
+
+#button2{
+display: inline;
+margin-left:300px;
+margin-right:380px;
+margin-top: 25px;
+display: inline-block;
+border-width: 2px;
+border-style: solid;
+border-color: black;
+padding-left: 70px;
+padding-top: 20px;
+padding-right: 70px;
+padding-bottom: 20px;
+font-size: 17pt;
+}
+#button2:hover{
+  color: orange;
+  font-style: italic;
+}
+#button3{
+display: inline;
+margin-left:300px;
+margin-right:380px;
+margin-top: 25px;
+margin-bottom: 90px;
+display: inline-block;
+border-width: 2px;
+border-style: solid;
+border-color: black;
+padding-left: 70px;
+padding-top: 20px;
+padding-right: 70px;
+padding-bottom: 20px;
+font-size: 17pt;
+}
+#button3:hover{
+  color: orange;
+  font-style: italic;
+}
