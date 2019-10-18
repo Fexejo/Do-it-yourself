@@ -3,6 +3,9 @@
 */
 
 /* Einstellungen fuer das grundlegende Layout, das fuer alle Bereiche benoetigt wird. */
+body{
+	background: <img src="./Bilder/HandwerkerHintergrund.PNG" alt="Hintergrundbild">
+}
 
 .hidden {
 	display: none;
@@ -36,12 +39,11 @@
 /* aktuell ausgewaehlter Button */
 #app header .active {
 	border: 0.2em black solid;
-	
 }
-
 
 #app main {
 	margin-top: 3em;
+	padding-top: 2em;
 }
 
 /* Overlay */
@@ -61,5 +63,4 @@
 
 /* Desktops */
 @media (min-width: 1200px) {
-
 }
