@@ -3,8 +3,14 @@
 */
 
 /* Einstellungen fuer das grundlegende Layout, das fuer alle Bereiche benoetigt wird. */
+html {
+
+font-family: sans-serif;
+font-size: 12pt;
+
+}
 body{
-	background: <img src="./Bilder/HandwerkerHintergrund.PNG" alt="Hintergrundbild">
+	background: url('./Bilder/HandwerkerHintergrund.jpg');
 }
 
 .hidden {

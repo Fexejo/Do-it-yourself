@@ -129,7 +129,7 @@ class App {
         header.querySelectorAll("img").forEach(b =>{
             b.className = "";
         });
-        app.className = "";
+        main.className = "";
         main.innerHTML = "";
         
         // Klasse .active dem entsprechenden Button geben
@@ -140,7 +140,7 @@ class App {
         
         // CSS-Klasse übernehmen, um die viewspezifischen CSS-Regeln zu aktivieren
         if (content && content.className) {
-            app.className = content.className;
+            main.className = content.className;
         }
     
         // Neue Inhalte der Topbar einfügen
