@@ -1,15 +1,64 @@
 /* Alle Selektoren müssen mit .suchen beginnen */
 
 .suchen {
-	background-color: green;
+		background: rgba(200, 200,200, 0.7);
+		margin-left: 5px;
+		margin-right: 5px;
+		font-size: 5px;
+		padding-bottom: 10em;
 }
-
+.suchen h2 {
+	font-family: sans-serif;
+	font-size: 20pt;
+	color: inherit;
+	margin-left: 20px;
+	margin-top: 1.2em;
+}
+.suchen img{
+	width: 3%;
+	height: 3%;
+}
 
 /* Aenderungen fuer Tablets */
 @media (min-width: 992px) {
-
+	.suchen {
+		background: rgba(200, 200,200, 0.7);
+		margin-left: 5px;
+		margin-right: 5px;
+		font-size: 5px;
+		padding-bottom: 10em;
+	}
+	.suchen h2 {
+	  font-family: sans-serif;
+	  font-size: 20pt;
+	  color: inherit;
+	  margin-left: 20px;
+		margin-top: 1.2em;
+	}
+	.suchen img{
+		width: 3%;
+		height: 3%;
+	}
 }
 
 /*  Aenderungen fuer Desktops */
 @media (min-width: 1200px) {
+	.suchen {
+		background: rgba(200, 200,200, 0.7);
+		margin-left: 30px;
+		margin-right: 30px;
+		font-size: 5px;
+		padding-bottom: 10em;
+	}
+	.suchen h2 {
+	  font-family: sans-serif;
+	  font-size: 20pt;
+	  color: inherit;
+	  margin-left: 20px;
+		margin-top: 1.2em;
+	}
+	.suchen img{
+		width: 3%;
+		height: 3%;
+	}
 }

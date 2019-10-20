@@ -92,12 +92,13 @@
 
 	<section id="editieren" class="hidden">
 		<main>
-			<h2>Möbel hinzufügen</h2>
-			<img src="./Bilder/Hinzufuegen.PNG"alt="Hinzufügenbutton">
+			<h2>Möbel hinzufügen <img src="./Bilder/Hinzufuegen.PNG"alt="Hinzufügenbutton"></h2>
 
 			<!--Kategorie als Scrollliste-->
-				<div>
+				<div id="Bezeichnung">
 					Bezeichnung:
+				</div>
+				<div id="Kategorie">
 					<form action="select.html">
 			  <label>Kategorie:
 			    <select name="Kat" size="4">
@@ -111,10 +112,12 @@
 			  </label>
 			</form>
 		</div>
-		<h1>einfache Tabelle</h1>
+
+		<div id="table">
+		<h1>Benötigte Materialien</h1>
 
 		<!--Tabelle um die Materialien einzutragen-->
-		<div>
+
 		<table>
 		  <tr>
 		    <th>Materialname</th>
@@ -127,7 +130,7 @@
 		</table>
 		</div>
 
-		<div>
+		<div id="Anleitung">
 			Anleitung
 		</div>
 		</main>
@@ -135,7 +138,9 @@
 
 	<section id="suchen" class="hidden">
 		<main>
-			<h2>Suche</h2>
+			<h2>Möbelstück suchen <img src="./Bilder/Suchen.PNG"alt="Suchebutton"></h2>
+			<lable for="suche">Suchbegriff eingeben</lable>
+			<input type="search" id="suche" placeholder="Suche">
 		</main>
 	</section>
 
@@ -147,7 +152,23 @@
 
 	<section id="materialliste" class="hidden">
 		<main>
-			<h2>mat</h2>
+			<h2>Materialliste <img src="./Bilder/Dollar.PNG"alt="Materiallistebutton"></h2>
+
+			<div id="Tabelle">
+			<h1>Ihre Gesamtliste</h1>
+
+			<!--Tabelle die die Materialien anzeigt-->
+			<table>
+			  <tr>
+			    <th>Materialname</th>
+			    <th>Stückzahl</th>
+			    <th>Länge</th>
+					<th>Höhe</th>
+					<th>Breite</th>
+					<th>Preis</th>
+			  </tr>
+			</table>
+			</div>
 		</main>
 	</section>
 
