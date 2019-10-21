@@ -7,6 +7,8 @@
 
 // Navigo fuer Routing laden
 import Navigo from "navigo/lib/navigo.js";
+
+// Overlay laden
 import Overlay from "./Overlay.js";
 
 // Viewklassen laden
@@ -23,7 +25,9 @@ class App {
      * Konstruktor.
      */
     constructor() {
+            // Die zentrale Instanz des Overlays erzeugen, die dann immer von ueberall aus verwendet werden kann.
         this.overlay = new Overlay();
+        
         this._title = "Do it yourself!";
         this._currentView = null;
     
