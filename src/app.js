@@ -9,7 +9,7 @@
 import Navigo from "navigo/lib/navigo.js";
 
 // Overlay laden
-import Overlay from "./Overlay.js";
+import Overlay from "./Overlay/Overlay.js";
 
 // Viewklassen laden
 import Start from "./Start/Start.js";

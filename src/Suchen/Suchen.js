@@ -27,7 +27,9 @@ class Suchen {
      */
     onShow() {
         let section = document.querySelector("#suchen").cloneNode(true);
-
+        
+        this._app.overlay.showAlert("Die Datenbank ist noch leer. Füge erst Möbelstücke hinzu, damit Du suchen kannst.");
+        
         return {
             button: 3,
             className: "suchen",
