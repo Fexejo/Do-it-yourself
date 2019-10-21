@@ -4,7 +4,7 @@
 /*@media (min-width: 400px) { */
 .start {
 /*background-color: #F2F5A9;*/
-background: rgba(200, 200,200, 0.7);
+background: yellow; /*rgba(200, 200,200, 0.7);*/
 margin-left: 10px;
 margin-right: 10px;
 font-size: 12px;
@@ -117,7 +117,7 @@ background-color: #DCDCDC;
 @media (min-width: 28em) {
   .start {
   /*background-color: #F2F5A9;*/
-  background: rgba(200, 200,200, 0.7);
+  background: blue; /*rgba(200, 200,200, 0.7);*/
   margin-left: 30px;
   margin-right: 30px;
   font-size: 15px;
@@ -207,7 +207,7 @@ background-color: #DCDCDC;
 }
 
 /*  Aenderungen fuer Desktops */
-@media (min-width: 1024px) {
+@media (min-width: 40em) {
   .start {
   /*background-color: #F2F5A9;*/
   background: green; /*rgba(200, 200,200, 0.7);
