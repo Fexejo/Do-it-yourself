@@ -1,15 +1,11 @@
 /* Alle Selektoren müssen mit .start beginnen */
 
-/* Aenderungen fuer Handys */
-/*@media (min-width: 400px) { */
 .start {
-/*background-color: #F2F5A9;*/
-background: yellow; /*rgba(200, 200,200, 0.7);*/
-margin-left: 10px;
-margin-right: 10px;
-font-size: 12px;
-
-
+    /*background-color: #F2F5A9;*/
+    background: yellow; /*rgba(200, 200,200, 0.7);*/
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
 }
 
 .start h3 {
@@ -89,7 +85,6 @@ background-color: #DCDCDC;
 }
 .start #button3{
   display: inline;
-  display: inline;
   margin-left:40px;
   margin-right:30px;
   margin-top: 15px;
@@ -121,15 +116,12 @@ background-color: #DCDCDC;
   margin-left: 30px;
   margin-right: 30px;
   font-size: 15px;
-
-
   }
 
   .start h3 {
     font-family: sans-serif;
     font-size: 67pt;
     color: inherit;
-
   }
   .start h2 {
     margin-top: 10px;
@@ -202,16 +194,14 @@ background-color: #DCDCDC;
     color: orange;
     font-style: italic;
   }
-  }
-
 }
 
 /*  Aenderungen fuer Desktops */
 @media (min-width: 40em) {
   .start {
   /*background-color: #F2F5A9;*/
-  background: green; /*rgba(200, 200,200, 0.7);
-*/  margin-left: 10px;
+  background: green; /*rgba(200, 200,200, 0.7);*/
+  margin-left: 10px;
   margin-right: 10px;
   font-size: 20px;
 
