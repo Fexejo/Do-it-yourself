@@ -114,7 +114,7 @@ background-color: #DCDCDC;
 
 
 /* Aenderungen fuer Tablets */
-@media (min-width: 28em) {
+@media (min-width: 30em) {
   .start {
   /*background-color: #F2F5A9;*/
   background: blue; /*rgba(200, 200,200, 0.7);*/
