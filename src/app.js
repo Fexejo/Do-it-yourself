@@ -34,12 +34,12 @@ class App {
     
         this._router.on({
             "*":                    () => this.showStart(""),
-            "/editieren/":           () => this.showEditieren(""),
-            "/suchen/":             () => this.showSuchen(""),
-            "/suchen/:searchString/": params => this.showSuchen(params.searchString),
-            "/anzeigen/":            () => this.showAnzeigen(""),
-            "/anzeigen/:id/":        params => this.showAnzeigen(params.id),
-            "/materialliste/":       () => this.showMaterialliste(),
+            "/editieren":           () => this.showEditieren(""),
+            "/suchen":             () => this.showSuchen(""),
+            "/suchen/:searchString": params => this.showSuchen(params.searchString),
+            "/anzeigen":            () => this.showAnzeigen(""),
+            "/anzeigen/:id":        params => this.showAnzeigen(params.id),
+            "/materialliste":       () => this.showMaterialliste(),
         });
     
         this._router.hooks({

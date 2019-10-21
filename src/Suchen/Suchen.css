@@ -1,7 +1,7 @@
 /* Alle Selektoren müssen mit .suchen beginnen */
 
 .suchen {
-		background: rgba(200, 200,200, 0.7);
+		background-color: rgba(200, 200,200, 0.7);
 		margin-left: 5px;
 		margin-right: 5px;
 		font-size: 5px;
@@ -22,7 +22,7 @@
 /* Aenderungen fuer Tablets */
 @media (min-width: 992px) {
 	.suchen {
-		background: rgba(200, 200,200, 0.7);
+		background-color: rgba(200, 200,200, 1);
 		margin-left: 5px;
 		margin-right: 5px;
 		font-size: 5px;
@@ -44,7 +44,7 @@
 /*  Aenderungen fuer Desktops */
 @media (min-width: 1200px) {
 	.suchen {
-		background: rgba(200, 200,200, 0.7);
+		background-color: rgba(200, 200,200, 1);
 		margin-left: 30px;
 		margin-right: 30px;
 		font-size: 5px;
