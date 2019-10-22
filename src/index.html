@@ -43,19 +43,16 @@
 
 				<p>
 					Schön, dass ihr auf unserer super duper tollen Webseite vorbeischaut. <br>
-<<<<<<< HEAD
 					Ihr seid leidenschaftliche Heimhandwerker und auf der Suche nach super duper tollen Projektideen?<br>
 					Oder hattet ihr eine eigene richtig super duper tolle Kreation und möchtet diese mit dem Rest der Welt teilen?<br>
 					Dann seid ihr hier genau richtig!<br>
 					Do-it-yourself bietet euch verschiedenste Funktionen. Dazu gehören zum einen das Hinzufügen von euren eigenen Ideen sowie einer
 				 	Suchfunktion, <br> um eure eigene Keativität etwas anzukurbeln.<br>
-=======
 					Ihr seid leidenschaftliche Heimhandwerker und seid auf der Suche nach super duper tollen Projektideen?<br>
 					Oder hattet ihr eine eigene richtig super duper tolle Kreation und möchtet diese mit dem Rest der Welt teilen?<br>
 					Dann seid ihr hier genau richtig!<br>
 					Do-it-yourself bietet euch verschiedenste Funktionen. Dazu gehören zum einen das Hinzufügen von euren eigenen Ideen sowie
 				 	Suchfunktion, <br> um eure eigene Kreativität etwas ankubeln.<br>
->>>>>>> 33e44fc8a0b4134224c10f18eb152286d018af97
 					Jeder Eintrag enthält eine genaue Bauanleitung mit beigefügter Materialliste.<br>
 					Ganz einfach zum Nachbauen!<br>
 					Und jetzt kommt der Hammer: Ihr könnt euch sogar die anfallenden Kosten für die unterschiedlichen Projekte anzeigen lassen!<br>
@@ -88,6 +85,7 @@
 		<main>
 			<h2>Möbel hinzufügen <img src="./Bilder/Hinzufuegen.PNG"alt="Hinzufügenbutton"></h2>
 
+<form>
 			<!--Kategorie als Scrollliste-->
 				<div id="Bezeichnung">
 					Bezeichnung: <input type = "text" placeholder="bitte eingeben...">
@@ -108,12 +106,17 @@
 			</form>
 		</div>
 
+		<div>
+			<input type: "file">
+		</div>
+
 		<div id="table">
 		<h1>Benötigte Materialien</h1>
 
 		<!--Tabelle um die Materialien einzutragen-->
 
 		<table>
+			<thead>
 		  <tr>
 		    <th>Materialname</th>
 		    <th>Stückzahl</th>
@@ -125,17 +128,20 @@
 				<th>Maßeinheit</th>
 				<th>Preis in €</th>
 		  </tr>
+		</thead>
+		<tbody>
 			<tr>
-			 <td><input type = "text"></td>
-			 <td><input type = "number" min ="1" step ="1"></td>
-			 <td><input type = "number" min ="0" step ="0,01"></td>
-			 <td><input type = "text"></td>
-			 <td><input type = "number" min ="0" step ="0,01"></td>
-			 <td><input type = "text"></td>
-			 <td><input type = "number" min ="0" step ="0,01"></td>
-			 <td><input type = "text"></td>
-			 <td><input type = "number" min ="0" step ="0,01" ></td>
+			 <td><span>Materialname:</span><input type = "text"></td>
+			 <td><span>Stückzahl:</span><input type = "number" min ="1" step ="1"></td>
+			 <td><span>Länge:</span><input type = "number" min ="0" step ="0,01"></td>
+			 <td><span>Maßeinheit:</span><input type = "text"></td>
+			 <td><span>Höhe:</span><input type = "number" min ="0" step ="0,01"></td>
+			 <td><span>Maßeinheit:</span><input type = "text"></td>
+			 <td><span>Breite:</span><input type = "number" min ="0" step ="0,01"></td>
+			 <td><span>Maßeinheit:</span><input type = "text"></td>
+			 <td><span>Preis:</span><input type = "number" min ="0" step ="0,01" ></td>
 		 </tr>
+	</tbody>
 		</table>
 		</div>
 
@@ -146,6 +152,7 @@
 		<div>
 			<button>Speichern</button>
 			<button>Zurücksetzen</button>
+		</from>
 		</main>
 	</section>
 
