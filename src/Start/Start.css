@@ -1,16 +1,17 @@
 /* Alle Selektoren müssen mit .start beginnen */
 
+
 .start {
     /*background-color: #F2F5A9;*/
-    background: yellow; /*rgba(200, 200,200, 0.7);*/
+    background: rgba(200, 200,200, 0.7);
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 12px;
+    font-size: 14px;
+    padding-bottom: 0.5em;
 }
 
 .start h3 {
-  font-family: sans-serif;
-  font-size: 9pt;
+  font-size: 13pt;
   color: inherit;
   margin-left: 1px;
 
@@ -18,7 +19,7 @@
 }
 .start h2 {
   font-family: sans-serif;
-  font-size: 12pt;
+  font-size: 16pt;
   color: inherit;
   margin-left: 20px;
   margin-top: 2px;
@@ -35,16 +36,15 @@
     padding-top: 5px;
 }
 .start img{
-  width: 7%;
-  height: 7%;
+  width: 2.5em;
+  height: 2.5em;
 }
 
-.start #button1{
-display: inline;
+
+.start #button1, .start #button2, .start #button3{
 margin-left:40px;
 margin-right:30px;
 margin-top: 15px;
-display: inline-block;
 border-width: 1.5px;
 border-style: solid;
 border-color: black;
@@ -56,151 +56,66 @@ font-size: 9pt;
 background-color: #DCDCDC;
 }
 
-.start #button1:hover{
+.start #button1:hover, .start #button2:hover, .start #button3:hover{
   color: orange;
   font-style: italic;
   background-color: white;
 }
 
-.start #button2{
-  display: inline;
-  margin-left:40px;
-  margin-right:30px;
-  margin-top: 15px;
-  display: inline-block;
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: black;
-  padding-right: 15px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 9pt;
-  background-color: #DCDCDC
-  }
-.start #button2:hover{
-  color: orange;
-  font-style: italic;
-  background-color: white;
-}
+
 .start #button3{
-  display: inline;
-  margin-left:40px;
-  margin-right:30px;
-  margin-top: 15px;
   margin-bottom: 60px;
-  display: inline-block;
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: black;
-  padding-right: 15px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 9pt;
-  background-color: #DCDCDC
   }
-.start #button3:hover{
-  color: orange;
-  font-style: italic;
-  background-color: white;
-}
-
 
 
 /* Aenderungen fuer Tablets */
-@media (min-width: 30em) {
+@media (min-width: 30em) and (orientation: landscape) {
   .start {
   /*background-color: #F2F5A9;*/
-  background: blue; /*rgba(200, 200,200, 0.7);*/
   margin-left: 30px;
   margin-right: 30px;
   font-size: 15px;
   }
 
   .start h3 {
-    font-family: sans-serif;
-    font-size: 67pt;
-    color: inherit;
+    font-size: 15pt;
   }
   .start h2 {
     margin-top: 10px;
-    font-family: sans-serif;
     font-size: 25pt;
-    color: inherit
   }
   .start img{
-    width: 7%;
-    height: 7%;
+    width: 2.5em;
+    height: 2.5em;
   }
 
-  .start #button1{
-  display: inline;
+.start #button1, .start #button2, .start #button3{
   margin-left:80px;
   margin-right:80px;
   margin-top: 25px;
-  display: inline-block;
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
   padding-right: 6px;
   padding-left: 70px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 10pt;
+  font-size: 14pt;
+  width: 80%
   }
-
-  .start #button1:hover{
-    color: orange;
-    font-style: italic;
-  }
-
   .start #button2{
-    display: inline;
-    margin-left:80px;
     margin-right:30px;
     margin-top: 25px;
-    display: inline-block;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    padding-right: 160px;
-    padding-left: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 10pt;
     }
-  .start #button2:hover{
-    color: orange;
-    font-style: italic;
-  }
+
   .start #button3{
-    display: inline;
-    margin-left:80px;
     margin-right:30px;
-    margin-top: 25px;
     margin-bottom: 80px;
-    display: inline-block;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    padding-right: 185px;
-    padding-left: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 10pt;
     }
-  .start #button3:hover{
-    color: orange;
-    font-style: italic;
-  }
 }
 
+
 /*  Aenderungen fuer Desktops */
-@media (min-width: 40em) {
+@media (min-width: 75em) {
   .start {
   /*background-color: #F2F5A9;*/
-  background: green; /*rgba(200, 200,200, 0.7);*/
   margin-left: 10px;
   margin-right: 10px;
   font-size: 20px;
@@ -209,80 +124,33 @@ background-color: #DCDCDC;
   }
 
   .start h3 {
-    font-family: sans-serif;
-    font-size: 2pt;
-    color: inherit;
+    font-size: 20pt;
+
 
   }
   .start h2 {
     margin-top: 10px;
-    font-family: sans-serif;
     font-size: 30pt;
-    color: inherit
   }
   .start img{
-    width: 7%;
-    height: 7%;
+    width: 3%;
+    height: 3%;
   }
 
-  .start #button1{
-  display: inline;
+  .start #button1, .start #button2, .start #button3{
   margin-left:80px;
   margin-right:30px;
   margin-top: 25px;
-  display: inline-block;
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
   padding-right: 6px;
   padding-left: 70px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 5pt;
+  font-size: 20pt;
   }
 
-  .start #button1:hover{
-    color: orange;
-    font-style: italic;
-  }
 
-  .start #button2{
-    display: inline;
-    margin-left:80px;
-    margin-right:30px;
-    margin-top: 25px;
-    display: inline-block;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    padding-right: 160px;
-    padding-left: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 20pt;
-    }
-  .start #button2:hover{
-    color: orange;
-    font-style: italic;
-  }
   .start #button3{
-    display: inline;
-    margin-left:80px;
-    margin-right:30px;
-    margin-top: 25px;
     margin-bottom: 80px;
-    display: inline-block;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    padding-right: 185px;
-    padding-left: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 20pt;
     }
-  .start #button3:hover{
-    color: orange;
-    font-style: italic;
-  }
+
 }
