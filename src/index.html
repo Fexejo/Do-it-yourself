@@ -82,7 +82,7 @@
 
 			<!--Kategorie als Scrollliste-->
 				<div id="Bezeichnung">
-					Bezeichnung:
+					Bezeichnung: <input type = "text" placeholder="bitte eingeben...">
 				</div>
 				<div id="Kategorie">
 					<form action="select.html">
@@ -90,9 +90,10 @@
 			    <select name="Kat" size="4">
 			      <option>Drinnen</option>
 			      <option>Draußen</option>
-			      <option>Tische</option>
-			      <option>Stühle</option>
-			      <option>Regale</option>
+			      <option>Tisch</option>
+			      <option>Sitzgelegenheit</option>
+			      <option>Regal</option>
+						<option>Bett</option>
 						<option>Deko</option>
 			    </select>
 			  </label>
@@ -109,16 +110,34 @@
 		    <th>Materialname</th>
 		    <th>Stückzahl</th>
 		    <th>Länge</th>
+				<th>Maßeinheit</th>
 				<th>Höhe</th>
+				<th>Maßeinheit</th>
 				<th>Breite</th>
-				<th>Preis</th>
+				<th>Maßeinheit</th>
+				<th>Preis in €</th>
 		  </tr>
+			<tr>
+			 <td><input type = "text"></td>
+			 <td><input type = "number" min ="1" step ="1"></td>
+			 <td><input type = "number" min ="0" step ="0,01"></td>
+			 <td><input type = "text"></td>
+			 <td><input type = "number" min ="0" step ="0,01"></td>
+			 <td><input type = "text"></td>
+			 <td><input type = "number" min ="0" step ="0,01"></td>
+			 <td><input type = "text"></td>
+			 <td><input type = "number" min ="0" step ="0,01" ></td>
+		 </tr>
 		</table>
 		</div>
 
 		<div id="Anleitung">
-			Anleitung
+			Anleitung: <textarea>bitte eingeben</textarea>
 		</div>
+
+		<div>
+			<button>Speichern</button>
+			<button>Zurücksetzen</button>
 		</main>
 	</section>
 
@@ -140,10 +159,9 @@
 		<main>
 			<h2>Materialliste <img src="./Bilder/Dollar.PNG"alt="Materiallistebutton"></h2>
 
+	<h1>Ihre Gesamtliste</h1>
 			<div id="Tabelle">
-			<h1>Ihre Gesamtliste</h1>
-
-			<!--Tabelle die die Materialien anzeigt-->
+					<!--Tabelle die die Materialien anzeigt-->
 			<table>
 			  <tr>
 			    <th>Materialname</th>
