@@ -85,29 +85,27 @@
 		<main>
 			<h2>Möbel hinzufügen <img src="./Bilder/Hinzufuegen.PNG"alt="Hinzufügenbutton"></h2>
 
-<form>
+			<form method="post">
 			<!--Kategorie als Scrollliste-->
 				<div id="Bezeichnung">
 					Bezeichnung: <input type = "text" placeholder="bitte eingeben...">
 				</div>
 				<div id="Kategorie">
-					<form action="select.html">
-			  <label>Kategorie:
+					
+			  <label>Kategorie:</label>
 			    <select name="Kat" size="4">
 			      <option>Drinnen</option>
 			      <option>Draußen</option>
 			      <option>Tisch</option>
 			      <option>Sitzgelegenheit</option>
 			      <option>Regal</option>
-						<option>Bett</option>
-						<option>Deko</option>
+					<option>Bett</option>
+					<option>Deko</option>
 			    </select>
-			  </label>
-			</form>
 		</div>
 
 		<div>
-			<input type: "file">
+			<input type="file">
 		</div>
 
 		<div id="table">
@@ -121,12 +119,12 @@
 		    <th>Materialname</th>
 		    <th>Stückzahl</th>
 		    <th>Länge</th>
-				<th>Maßeinheit</th>
-				<th>Höhe</th>
-				<th>Maßeinheit</th>
-				<th>Breite</th>
-				<th>Maßeinheit</th>
-				<th>Preis in €</th>
+			<th>Maßeinheit</th>
+			<th>Höhe</th>
+			<th>Maßeinheit</th>
+			<th>Breite</th>
+			<th>Maßeinheit</th>
+			<th>Preis in €</th>
 		  </tr>
 		</thead>
 		<tbody>
@@ -150,9 +148,10 @@
 		</div>
 
 		<div>
+			<input type="submit">
 			<button>Speichern</button>
 			<button>Zurücksetzen</button>
-		</from>
+		</form>
 		</main>
 	</section>
 
@@ -182,9 +181,9 @@
 			    <th>Materialname</th>
 			    <th>Stückzahl</th>
 			    <th>Länge</th>
-					<th>Höhe</th>
-					<th>Breite</th>
-					<th>Preis</th>
+				<th>Höhe</th>
+				<th>Breite</th>
+				<th>Preis</th>
 			  </tr>
 			</table>
 			</div>
