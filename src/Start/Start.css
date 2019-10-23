@@ -39,7 +39,10 @@
   width: 1.5em;
   height: 1.5em;
 }
-
+.start #Containerbutton{
+  display: flex;
+  justify-content: center;
+}
 
 .start #button1, .start #button2, .start #button3{
 margin-left:40px;
@@ -72,41 +75,40 @@ background-color: #DCDCDC;
 @media (min-width: 30em) and (orientation: landscape) {
   .start {
   /*background-color: #F2F5A9;*/
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 15px;
+
+
+  }
+  .start #Containerbutton{
+    display: flex;
+    justify-content: center;
   }
 
   .start h3 {
-    font-size: 15pt;
+    font-size: 13pt;
+
+
   }
   .start h2 {
-    margin-top: 10px;
-    font-size: 25pt;
+    margin-top: 45px;
+    font-size: 20pt;
   }
   .start img{
-    width: 2.5em;
-    height: 2.5em;
+    width: 4%;
+    height: 4%;
   }
 
-.start #button1, .start #button2, .start #button3{
-  margin-left:80px;
-  margin-right:80px;
-  margin-top: 25px;
-  padding-right: 6px;
-  padding-left: 70px;
+  .start #button1, .start #button2, .start #button3{
+    max-width: 40%;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 14pt;
-  width: 80%
+  font-size: 12pt;
   }
-  .start #button2{
-    margin-right:30px;
-    margin-top: 25px;
-    }
+
 
   .start #button3{
-    margin-right:30px;
     margin-bottom: 80px;
     }
 }
@@ -118,34 +120,35 @@ background-color: #DCDCDC;
   /*background-color: #F2F5A9;*/
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 15px;
 
 
   }
 
+  .start #Containerbutton{
+    display: flex;
+    justify-content: center;
+  }
+
   .start h3 {
-    font-size: 20pt;
+    font-size: 13pt;
 
 
   }
   .start h2 {
-    margin-top: 10px;
-    font-size: 30pt;
+    margin-top: 45px;
+    font-size: 20pt;
   }
   .start img{
-    width: 6%;
-    height: 6%;
+    width: 4%;
+    height: 4%;
   }
 
   .start #button1, .start #button2, .start #button3{
-  margin-left:80px;
-  margin-right:30px;
-  margin-top: 25px;
-  padding-right: 6px;
-  padding-left: 70px;
+  max-width: 40%;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 20pt;
+  font-size: 12pt;
   }
 
 
