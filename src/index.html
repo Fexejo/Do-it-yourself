@@ -33,6 +33,7 @@
 		</main>
 		<footer>
 			Do it Yourself! 2019 | Impressum
+		</footer>
 	</section>
 
 
@@ -54,12 +55,10 @@
 					Ihr seid leidenschaftliche Heimhandwerker und seid auf der Suche nach super duper tollen Projektideen?<br>
 					Oder hattet ihr eine eigene richtig super duper tolle Kreation und möchtet diese mit dem Rest der Welt teilen?<br>
 					Dann seid ihr hier genau richtig!<br>
-					Do-it-yourself bietet euch verschiedenste Funktionen. Dazu gehören zum einen das Hinzufügen von euren eigenen Ideen sowie
-				 	Suchfunktion, <br> um eure eigene Kreativität etwas ankubeln.<br>
 					Jeder Eintrag enthält eine genaue Bauanleitung mit beigefügter Materialliste.<br>
 					Ganz einfach zum Nachbauen!<br>
 					Und jetzt kommt der Hammer: Ihr könnt euch sogar die anfallenden Kosten für die unterschiedlichen Projekte anzeigen lassen!<br>
-					Da Feedback von großer Bedeutung für uns ist, besteht für euch die Möglichkeit Kommentare zu einzelnen Einrägen zu verfassen. <br>
+					Da Feedback von großer Bedeutung für uns ist, besteht für euch die Möglichkeit Kommentare zu einzelnen Einträgen zu verfassen. <br>
 					Vielen lieben Dank und super viel Spaß wünscht euch
 
 					<p>euer Do-it-Yourself Team </p>
@@ -96,9 +95,7 @@
 				<div id="Kategorie">
 
 			  <label>Kategorie:</label>
-			    <select name="Kat" size="4">
-			      <option>Drinnen</option>
-			      <option>Draußen</option>
+			    <select id = "auswahl"name="Kat" size="4">
 			      <option>Tisch</option>
 			      <option>Sitzgelegenheit</option>
 			      <option>Regal</option>
@@ -108,24 +105,24 @@
 		</div>
 
 		<div>
-			<input type="file" accept="image/*">
+			<input id="durchsuchen" type="file" accept="image/*">
 		</div>
 
-		<div id="table">
+		<div>
 		<h1>Benötigte Materialien</h1>
 
 		<!--Tabelle um die Materialien einzutragen-->
 
-		<table>
+		<table id="table">
 			<thead>
 		  <tr>
 		    <th>Materialname</th>
 		    <th>Stückzahl</th>
-		    <th>Länge</th>
+		    <th >Länge</th>
 			<th>Maßeinheit</th>
-			<th>Höhe</th>
+			<th >Höhe</th>
 			<th>Maßeinheit</th>
-			<th>Breite</th>
+			<th >Breite</th>
 			<th>Maßeinheit</th>
 			<th>Preis in €</th>
 		  </tr>
@@ -133,41 +130,113 @@
 		<tbody>
 			<tr>
 			 <td><span>Materialname:</span><input type = "text"></td>
-			 <td><span>Stückzahl:</span><input type = "number" min ="1" step ="1"></td>
-			 <td><span>Länge:</span><input type = "number" min ="0" step ="0,01"></td>
+			 <td><span>Stückzahl:</span><input id="stückzahl"type = "number" min ="1" step ="1"></td>
+			 <td><span>Länge:</span><input id="laenge" type = "number" min ="0" step ="0,01"></td>
 			 <td><span>Maßeinheit:</span><input type = "text"></td>
-			 <td><span>Höhe:</span><input type = "number" min ="0" step ="0,01"></td>
+			 <td><span>Höhe:</span><input id="hoehe" type = "number" min ="0" step ="0,01"></td>
 			 <td><span>Maßeinheit:</span><input type = "text"></td>
-			 <td><span>Breite:</span><input type = "number" min ="0" step ="0,01"></td>
+			 <td><span>Breite:</span><input id="breite"= type "number" min ="0" step ="0,01"></td>
 			 <td><span>Maßeinheit:</span><input type = "text"></td>
-			 <td><span>Preis:</span><input type = "number" min ="0" step ="0,01" ></td>
+			 <td><span>Preis:</span><input id="preis" type= "number" min ="0" step ="0,01" ></td>
 		 </tr>
 	</tbody>
 		</table>
 		</div>
 
 		<div id="Anleitung">
-			Anleitung: <textarea placeholder="Bitte eingeben"></textarea>
+			Anleitung: <textarea id= "textfeld2"placeholder="Bitte Text eingeben"></textarea>
 		</div>
 
 		<div>
-			<input type="submit" value="Speichern">
-			<input type="reset">
+			<input id="suchbutton" type="submit" value="Speichern">
+			<input id="resetbutton" type="reset">
 		</form>
 		</main>
 	</section>
 
 	<section id="suchen" class="hidden">
 		<main>
-			<h2>Möbelstück suchen <img src="./Bilder/Suchen.PNG"alt="Suchebutton"></h2>
-			<lable for="suche">Suchbegriff eingeben</lable>
-			<input type="search" id="suche" placeholder="Suche">
+			<h2>Möbelstück suchen <img id = Button src="./Bilder/Suchen.PNG"alt="Suchebutton"></h2>
+
+				<div id = Suchleiste>
+				<lable for="suche">Suchbegriff eingeben</lable>
+				<input type="search" id="suche" placeholder="Suche">
+				</div>
+
+<div id = Suchanzeige>
+				<div id = Suchergebnis>
+					<img src="./Bilder/Hammer.PNG"alt="Test">
+					<br><b>Bezeichnung: Stuhl Erna</b></br>
+					<br><b>Kategorie: Stuhl</b></br>
+				</div>
+
+				<div id = Suchergebnis>
+					<img src="./Bilder/Hammer.PNG"alt="Test">
+					<br><b>Bezeichnung: Tisch Erna</b></br>
+					<br><b>Kategorie: Tisch</b></br>
+
+				</div>
+				<div id = Suchergebnis>
+					<img src="./Bilder/Hammer.PNG"alt="Test">
+					<br><b>Bezeichnung: Tisch Erna</b></br>
+					<br><b>Kategorie: Tisch</b></br>
+
+				</div>
+				<div id = Suchergebnis>
+					<img src="./Bilder/Hammer.PNG"alt="Test">
+					<br><b>Bezeichnung: Tisch Erna</b></br>
+					<br><b>Kategorie: Tisch</b></br>
+
+				</div>
+				<div id = Suchergebnis>
+					<img src="./Bilder/Hammer.PNG"alt="Test">
+					<br><b>Bezeichnung: Tisch Erna</b></br>
+					<br><b>Kategorie: Tisch</b></br>
+
+				</div>
+</div>
 		</main>
 	</section>
 
 	<section id="anzeigen" class="hidden">
 		<main>
 			<h2>anzeigen</h2>
+
+			<div id = Materialtabelle>
+				<table>
+					<thead>
+					<tr>
+					<th>Materialname</th>
+					<th>Stückzahl</th>
+					<th>Länge</th>
+					<th>Maßeinheit</th>
+					<th>Höhe</th>
+					<th>Maßeinheit</th>
+					<th>Breite</th>
+					<th>Maßeinheit</th>
+					<th>Preis in €</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					 <td>Holzbrett</td>
+					 <td>5</td>
+					 <td>50,0</td>
+					 <td>cm</td>
+					 <td>30,5</td>
+					 <td>cm</td>
+					 <td>2,5</td>
+					 <td>cm</td>
+					 <td>25,50</td>
+				 </tr>
+			</tbody>
+				</table>
+			</div>
+			<div id = Anleitung>
+				Anleitung: Schleifen, Schrauben, Streichen -> Fertig!
+			</div>
+
+
 		</main>
 	</section>
 

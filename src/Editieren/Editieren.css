@@ -3,18 +3,19 @@
 
 .editieren {
 	background: rgba(200, 200,200, 0.7);
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
 	font-size: 5px;
 	padding-bottom: 10em;
 }
 
 .editieren h2 {
 	font-family: sans-serif;
-	font-size: 20pt;
+	font-size: 16pt;
 	color: inherit;
 	margin-left: 20px;
 	margin-top: 1.5em;
+	text-decoration-line: underline;
 }
 
 .editieren img{
@@ -24,26 +25,78 @@
 .editieren #Bezeichnung{
 	font-family: sans-serif;
 	font-size: 10pt;
+	font-weight: 501;
 	color: inherit;
-	margin-left: 20px
+	margin-left: 20px;
+	margin-top: 25px;
+;
 
 }
 .editieren #textfeld{
-	width: 200px;
+	width: 250px;
+	height:20px;
+	margin-top:5px;
+
+}
+.editieren #auswahl{
+	width:250px;
+	margin-top:5px;
+	margin-bottom: 20px;
 
 }
 .editieren #Kategorie{
 	font-family: sans-serif;
 	font-size: 10pt;
+	font-weight: 501;
 	color: inherit;
 	margin-left: 20px;
-	margin-top: 30px;
+	margin-top: 20px;
+}
+
+.editieren #durchsuchen{
+	margin-left: 20px;
 }
 .editieren h1{
 	font-family: sans-serif;
-	font-size: 12pt;
+	font-size: 10pt;
 	color: inherit;
 	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.editieren #table{
+	margin-left: 20px;
+}
+
+.editieren #stückzahl{
+	width: 10.5em;
+}
+.editieren #laenge{
+	width: 10.5em;
+}
+.editieren #hoehe{
+	width: 10.5em;
+}
+.editieren #breite{
+	width: 10.5em;
+}
+.editieren #preis{
+	width: 10.5em;
+}
+.editieren #Anleitung{
+	font-size: 10pt;
+	font-weight: 501;
+}
+.editieren #textfeld2{
+	width: 250px;
+	height:80px;
+	margin-top:5px;
+
+}
+.editieren #suchbutton{
+	margin-right:10px;
+	margin-left:50px;
+	margin-top: 5px;
 }
 
 .editieren th{
