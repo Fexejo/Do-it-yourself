@@ -1,16 +1,71 @@
 /* Alle Selektoren müssen mit .anzeigen beginnen */
 
 .anzeigen {
-	background-color: blue;
+background-color: rgba(200, 200,200, 0.7);
+font-size: 14pt;
+font-family: sans-serif;
+margin-left: 1em;
+margin-right: 1em;
+}
+.anzeigen h2{
+	font-size: 22pt;
+}
+.anzeigen h3{
+	margin-top: 2em;
+}
+.anzeigen img{
+	width: 14em;
+	height: 12em;
+}
+.anzeigen td{
+	display: block;
+	font-size: 12pt;
+}
+	.anzeigen th{
+		display: none;
+		width: 5em;
+	}
+.anzeigen span{
+	display: inline-block;
+	width: 8em;
+}
+.anzeigen #Materialtabelle{
+	margin-bottom: 2em;
+}
+.anzeigen #Anleitung{
+	margin-bottom: 1em;
+	font-size: 12pt;
+}
+.anzeigen #Anleitung span{
+	font-size: 14pt;
+	display:initial;
+}
+.anzeigen #Buttons{
+	margin-bottom: 0.5em;
 }
 
-
-
 /* Aenderungen fuer Tablets */
-@media (min-width: 992px) {
+@media (min-width: 30em) and (orientation: landscape) {
+
+	.anzeigen th{
+		display: table-cell;
+		font-size: 12pt;
+		padding-right: 2em;
+		text-align: left;
+	}
+.anzeigen h2{
+	margin-top: 2em;
+}
+	.anzeigen td{
+		display: table-cell;
+		text-align: left;
+	}
+	.anzeigen span {
+		display: none;
+	}
 
 }
 
 /*  Aenderungen fuer Desktops */
-@media (min-width: 1200px) {
+@media (min-width: 75em) {
 }
