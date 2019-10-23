@@ -24,12 +24,16 @@
 .editieren #Bezeichnung{
 	font-family: sans-serif;
 	font-size: 10pt;
+	font-weight: 501;
 	color: inherit;
-	margin-left: 20px
+	margin-left: 20px;
+;
 
 }
 .editieren #textfeld{
-	width: 200px;
+	width: 250px;
+	height:20px;
+	margin-top:5px;
 
 }
 .editieren #Kategorie{
