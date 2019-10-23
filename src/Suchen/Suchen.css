@@ -19,11 +19,11 @@
 }
 .suchen img{
 	width: 16em;
-	height: 16em;
+	height: 14em;
 
 }
 
-.suchen #Suchergebnis{
+.suchen .Suchergebnis{
 	background:rgba(0, 0, 0, 0.3);
 	border: 2px solid black;
 	margin-top: 3em;
