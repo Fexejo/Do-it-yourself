@@ -3,9 +3,9 @@
 .suchen {
 		background-color: rgba(200, 200,200, 0.7);
 		margin-left: 0.5em;
-		margin-right: 0.5em;
-		font-size: 12pt;
-		font-family: sans-serif;
+			margin-right: 0.5em;
+			font-size: 12pt;
+			font-family: sans-serif;
 }
 .suchen h2 {
 	font-size: 18pt;
