@@ -8,6 +8,9 @@
 // Navigo fuer Routing laden
 import Navigo from "navigo/lib/navigo.js";
 
+//DB laden
+import Db from "./db.js";
+
 // Overlay laden
 import Overlay from "./Overlay/Overlay.js";
 
