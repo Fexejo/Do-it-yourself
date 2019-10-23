@@ -3,7 +3,9 @@
 .anzeigen {
 background-color: rgba(200, 200,200, 0.7);
 font-size: 14pt;
-font-family: sans-serif;;
+font-family: sans-serif;
+margin-left: 1em;
+margin-right: 1em;
 }
 .anzeigen h2{
 	font-size: 22pt;
@@ -47,9 +49,13 @@ font-family: sans-serif;;
 
 	.anzeigen th{
 		display: table-cell;
-		font-size: 10pt;
+		font-size: 12pt;
+		padding-right: 2em;
+		text-align: left;
 	}
-
+.anzeigen h2{
+	margin-top: 2em;
+}
 	.anzeigen td{
 		display: table-cell;
 		text-align: left;
@@ -57,10 +63,7 @@ font-family: sans-serif;;
 	.anzeigen span {
 		display: none;
 	}
-	.anzeigen table input{
-		width: 100%;
-	}
-}
+
 }
 
 /*  Aenderungen fuer Desktops */

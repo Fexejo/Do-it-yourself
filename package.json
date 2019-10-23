@@ -15,5 +15,8 @@
     "navigo": "^7.1.2",
     "parcel-bundler": "^1.12.4",
     "shelljs": "^0.8.3"
+  },
+  "dependencies": {
+    "firebase": "^7.2.1"
   }
 }
