@@ -14,18 +14,23 @@
 	font-size: 20pt;
 	color: inherit;
 	margin-left: 20px;
-	margin-top: 1.2em;
+	margin-top: 1.5em;
 }
 
 .editieren img{
-	width: 3%;
-	height: 3%;
+	width: 8%;
+	height: 8%;
 }
 .editieren #Bezeichnung{
 	font-family: sans-serif;
 	font-size: 10pt;
 	color: inherit;
 	margin-left: 20px
+
+}
+.editieren #textfeld{
+	width: 200px;
+
 }
 .editieren #Kategorie{
 	font-family: sans-serif;
