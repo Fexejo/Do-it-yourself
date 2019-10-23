@@ -38,12 +38,16 @@
 	width: 270px;
 	height:20px;
 	margin-top:5px;
+	background-color: rgba(240,240,240,8);
+	border: none;
 
 }
 .editieren #auswahl{
 	width:270px;
 	margin-top:5px;
 	margin-bottom: 20px;
+	background-color: rgba(240,240,240,8);
+	border: none;
 
 }
 .editieren #Kategorie{
@@ -72,27 +76,42 @@
 
 .editieren #stückzahl{
 	width: 10.5em;
+	background-color: rgba(240,240,240,8);
+	border: none;
 }
 .editieren #laenge{
 	width: 10.5em;
+	background-color: rgba(240,240,240,8);
+	border: none;
 }
 .editieren #hoehe{
 	width: 10.5em;
+	background-color: rgba(240,240,240,8);
+	border: none;
 }
 .editieren #breite{
 	width: 10.5em;
+	background-color: rgba(240,240,240,8);
+	border: none;
 }
 .editieren #preis{
 	width: 10.5em;
+	background-color: rgba(240,240,240,8);
+	border: none;
 }
 .editieren #Anleitung{
 	font-size: 10pt;
 	font-weight: 501;
+	font-family: sans-serif;
+	color: inherit;
+	margin-top: 30px;
 }
 .editieren #textfeld2{
 	width: 270px;
 	height:80px;
 	margin-top:5px;
+	background-color: rgba(240,240,240,8);
+	border: none;
 
 }
 .editieren #suchbutton{
@@ -106,11 +125,7 @@
 	border: 1px solid black;
 }
 .editieren #Anleitung{
-	font-family: sans-serif;
-	font-size: 10pt;
-	color: inherit;
-	margin-left: 20px;
-	margin-top: 30px;
+
 }
 
 .editieren td{
@@ -193,12 +208,14 @@
 		width: 400px;
 		height:40px;
 		margin-top:5px;
+		background-color: rgba(240,240,240,8);
 
 	}
 	.editieren #auswahl{
 		width:405px;
 		margin-top:40px;
 		margin-bottom: 20px;
+		background-color: rgba(240,240,240,8);
 
 	}
 	.editieren #Kategorie{
@@ -213,17 +230,19 @@
 	.editieren #durchsuchen{
 		margin-left: 320px;
 		margin-top: 40px;
+		background-color: rgba(240,240,240,8);
 	}
 	.editieren h1{
 		font-family: sans-serif;
-		font-size: 10pt;
+		font-size: 12pt;
 		color: inherit;
 		margin-top: 30px;
-		margin-left: 20px;
+		margin-left: 30px;
 	}
 
 	.editieren #table{
 		margin-left: 30px;
+		background-color: rgba(240,240,240,8);
 
 	}
 .editieren th{
@@ -236,18 +255,38 @@
 	.editieren #stückzahl{
 		width: 10.5em;
 		height: 27px;
+		background-color: white;
+		border-style: solid;
+		border-width: 1px;
 	}
 	.editieren #laenge{
 		width: 10.5em;
+		height: 27px;
+		background-color: white;
+		border-style: solid;
+		border-width: 1px;
+
 	}
 	.editieren #hoehe{
 		width: 10.5em;
+		height: 27px;
+		background-color: white;
+		border-style: solid;
+		border-width: 1px;
 	}
 	.editieren #breite{
 		width: 10.5em;
+		height: 27px;
+		background-color: white;
+		border-style: solid;
+		border-width: 1px;
 	}
 	.editieren #preis{
 		width: 10.5em;
+		height: 27px;
+		background-color: white;
+		border-style: solid;
+		border-width: 1px;
 	}
 	.editieren #Anleitung{
 		font-size: 10pt;
@@ -256,21 +295,26 @@
 
 	}
 	.editieren #textfeld2{
-		width: 270px;
-		height:80px;
-		margin-top:5px;
+		width: 600px;
+		height:200px;
+		margin-top:50px;
 		margin-left: 200px;
+		background-color: rgba(240,240,240,8);
+
+
+
 
 	}
 	.editieren #suchbutton{
-		margin-right:10px;
-		margin-left:200px;
+		margin-right:150px;
+		margin-left:400px;
 		margin-top: 5px;
+		margin-bottom: 70px;
 	}
 
 	.editieren #Anleitung{
 		font-family: sans-serif;
-		font-size: 10pt;
+		font-size: 12pt;
 		color: inherit;
 		margin-left: 20px;
 		margin-top: 30px;
