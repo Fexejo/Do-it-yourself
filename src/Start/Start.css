@@ -4,8 +4,8 @@
 .start {
     /*background-color: #F2F5A9;*/
     background: rgba(200, 200,200, 0.7);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     font-size: 14px;
     padding-bottom: 0.5em;
 }
@@ -39,10 +39,7 @@
   width: 1.5em;
   height: 1.5em;
 }
-.start #Containerbutton{
-  display: flex;
-  justify-content: center;
-}
+
 
 .start #button1, .start #button2, .start #button3{
 margin-left:40px;
@@ -75,20 +72,15 @@ background-color: #DCDCDC;
 @media (min-width: 30em) and (orientation: landscape) {
   .start {
   /*background-color: #F2F5A9;*/
-  margin-left: 10px;
-  margin-right: 10px;
+  ;
   font-size: 15px;
-
-
-  }
-  .start #Containerbutton{
-    display: flex;
-    justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 2em;
   }
 
   .start h3 {
     font-size: 13pt;
-
 
   }
   .start h2 {
@@ -96,20 +88,24 @@ background-color: #DCDCDC;
     font-size: 20pt;
   }
   .start img{
-    width: 4%;
-    height: 4%;
+    width: 6%;
+    height: 6%;
   }
 
   .start #button1, .start #button2, .start #button3{
-    max-width: 40%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    max-width: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12pt;
+    padding-left: 100px;
+    margin-left: 200px;
   font-size: 12pt;
   }
 
 
   .start #button3{
-    margin-bottom: 80px;
+    margin-bottom: 10px;
+
     }
 }
 
@@ -122,17 +118,10 @@ background-color: #DCDCDC;
   margin-right: 10px;
   font-size: 15px;
 
-
-  }
-
-  .start #Containerbutton{
-    display: flex;
-    justify-content: center;
   }
 
   .start h3 {
     font-size: 13pt;
-
 
   }
   .start h2 {
@@ -140,15 +129,17 @@ background-color: #DCDCDC;
     font-size: 20pt;
   }
   .start img{
-    width: 4%;
-    height: 4%;
+    width: 7%;
+    height: 7%;
   }
 
   .start #button1, .start #button2, .start #button3{
-  max-width: 40%;
+  max-width: 30%;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 12pt;
+  padding-left: 100px;
+  margin-left: 200px;
   }
 
 

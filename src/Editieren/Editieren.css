@@ -3,8 +3,8 @@
 
 .editieren {
 	background: rgba(200, 200,200, 0.7);
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
 	font-size: 5px;
 	padding-bottom: 2em;
 
@@ -131,6 +131,11 @@
 
 /* Aenderungen fuer Tablets */
 @media (min-width: 30em) and (orientation: landscape) {
+	.editieren{
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-bottom: 2em;
+}
 
 	.editieren th{
 		display: table-cell;
@@ -151,5 +156,130 @@
 
 /*  Aenderungen fuer Desktops */
 @media (min-width: 75em) {
+	.editieren {
+		background: rgba(200, 200,200, 0.7);
+		margin-left: 15px;
+		margin-right: 15px;
+		font-size: 5px;
+		padding-bottom: 2em;
+
+	}
+
+	.editieren h2 {
+		font-family: sans-serif;
+		font-size: 20pt;
+		color: inherit;
+		margin-left: 20px;
+		text-decoration-line: underline;
+		margin-top: 70px;
+		margin-left: 60px;
+	}
+
+	.editieren img{
+		width: 8%;
+		height: 8%;
+	}
+	.editieren #Bezeichnung{
+		font-family: sans-serif;
+		font-size: 12pt;
+		font-weight: 501;
+		color: inherit;
+		margin-left: 200px;
+		margin-top: 60px;
+	;
+
+	}
+	.editieren #textfeld{
+		width: 400px;
+		height:40px;
+		margin-top:5px;
+
+	}
+	.editieren #auswahl{
+		width:405px;
+		margin-top:40px;
+		margin-bottom: 20px;
+
+	}
+	.editieren #Kategorie{
+		font-family: sans-serif;
+		font-size: 12pt;
+		font-weight: 501;
+		color: inherit;
+		margin-left: 222px;
+		margin-top: 5px;
+	}
+
+	.editieren #durchsuchen{
+		margin-left: 320px;
+		margin-top: 40px;
+	}
+	.editieren h1{
+		font-family: sans-serif;
+		font-size: 10pt;
+		color: inherit;
+		margin-top: 30px;
+		margin-left: 20px;
+	}
+
+	.editieren #table{
+		margin-left: 30px;
+
+	}
+.editieren th{
+	height: 30px;
+	background-color: rgba(220,220,220,0.8);
+}
+.editieren td{
+	height: 27px;
+}
+	.editieren #stückzahl{
+		width: 10.5em;
+		height: 27px;
+	}
+	.editieren #laenge{
+		width: 10.5em;
+	}
+	.editieren #hoehe{
+		width: 10.5em;
+	}
+	.editieren #breite{
+		width: 10.5em;
+	}
+	.editieren #preis{
+		width: 10.5em;
+	}
+	.editieren #Anleitung{
+		font-size: 10pt;
+		font-weight: 501;
+		margin-left: 200px;
+
+	}
+	.editieren #textfeld2{
+		width: 270px;
+		height:80px;
+		margin-top:5px;
+		margin-left: 200px;
+
+	}
+	.editieren #suchbutton{
+		margin-right:10px;
+		margin-left:200px;
+		margin-top: 5px;
+	}
+
+	.editieren #Anleitung{
+		font-family: sans-serif;
+		font-size: 10pt;
+		color: inherit;
+		margin-left: 20px;
+		margin-top: 30px;
+	}
+
+	.editieren h3{
+			margin-top: 10em;
+		}
+
+
 
 }
