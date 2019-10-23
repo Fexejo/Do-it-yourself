@@ -2,6 +2,9 @@
 
 import stylesheet from "./Editieren.css";
 
+// Die Formularklasse laden
+import EditierenForm from "./EditierenForm.js";
+
 /**
  * View zum Editieren bzw. neu Anlegen von Moebelstuecken.
  * ID eines Moebelstuecks als GET-Parameter, um Bearbeitung zu starten.
@@ -28,12 +31,16 @@ class Editieren {
      */
     onShow() {
         let section = document.querySelector("#editieren").cloneNode(true);
-
-    return {
-        button: 2,
-        className: "editieren",
-        main: section.querySelectorAll("main > *"),
-    };
+        
+        
+        
+        
+        
+        return {
+            button: 2,
+            className: "editieren",
+            main: section.querySelectorAll("main > *"),
+        };
     }
 
     /**
@@ -54,6 +61,10 @@ class Editieren {
      */
     get title() {
         return "Edit";
+    }
+    
+    save() {
+        
     }
 }
 

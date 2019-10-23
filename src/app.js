@@ -31,6 +31,9 @@ class App {
             // Die zentrale Instanz des Overlays erzeugen, die dann immer von ueberall aus verwendet werden kann.
         this.overlay = new Overlay();
         
+        // ...und jetzt von der DB
+        this._db = new Db();
+        
         this._title = "Do it yourself!";
         this._currentView = null;
     

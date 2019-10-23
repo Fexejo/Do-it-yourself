@@ -23,6 +23,18 @@ class Db {
 		  
 		  this._db = firebase.firestore();
 	}
+	
+	getAll () {
+		return this._db.collection("moebel").get();
+	}
+	
+	getById(id) {
+		return this._db.collection("moebel").doc(id).get();
+	}
+	
+	add(data) {
+		return this._db.collection("moebel").add(data);
+	}
 }
 
 export default Db;
