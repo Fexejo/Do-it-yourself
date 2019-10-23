@@ -33,6 +33,7 @@
 		</main>
 		<footer>
 			Do it Yourself! 2019 | Impressum
+		</footer>
 	</section>
 
 
@@ -116,34 +117,34 @@
 			<thead>
 		  <tr>
 		    <th>Materialname</th>
-		    <th id="stückzahl">Stückzahl</th>
-		    <th id="laenge">Länge</th>
+		    <th>Stückzahl</th>
+		    <th >Länge</th>
 			<th>Maßeinheit</th>
-			<th id="hoehe">Höhe</th>
+			<th >Höhe</th>
 			<th>Maßeinheit</th>
-			<th id="breite">Breite</th>
+			<th >Breite</th>
 			<th>Maßeinheit</th>
-			<th id="preis">Preis in €</th>
+			<th>Preis in €</th>
 		  </tr>
 		</thead>
 		<tbody>
 			<tr>
 			 <td><span>Materialname:</span><input type = "text"></td>
-			 <td><span>Stückzahl:</span><input type = "number" min ="1" step ="1"></td>
-			 <td><span>Länge:</span><input type = "number" min ="0" step ="0,01"></td>
+			 <td><span>Stückzahl:</span><input id="stückzahl"type = "number" min ="1" step ="1"></td>
+			 <td><span>Länge:</span><input id="laenge" type = "number" min ="0" step ="0,01"></td>
 			 <td><span>Maßeinheit:</span><input type = "text"></td>
-			 <td><span>Höhe:</span><input type = "number" min ="0" step ="0,01"></td>
+			 <td><span>Höhe:</span><input id="hoehe" type = "number" min ="0" step ="0,01"></td>
 			 <td><span>Maßeinheit:</span><input type = "text"></td>
-			 <td><span>Breite:</span><input type = "number" min ="0" step ="0,01"></td>
+			 <td><span>Breite:</span><input id="breite"= type "number" min ="0" step ="0,01"></td>
 			 <td><span>Maßeinheit:</span><input type = "text"></td>
-			 <td><span>Preis:</span><input type = "number" min ="0" step ="0,01" ></td>
+			 <td><span>Preis:</span><input id="preis" type= "number" min ="0" step ="0,01" ></td>
 		 </tr>
 	</tbody>
 		</table>
 		</div>
 
 		<div id="Anleitung">
-			Anleitung: <textarea id= "textfeld2"placeholder="Bitte eingeben"></textarea>
+			Anleitung: <textarea id= "textfeld2"placeholder="Bitte Text eingeben"></textarea>
 		</div>
 
 		<div>

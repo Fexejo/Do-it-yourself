@@ -68,6 +68,37 @@
 	margin-left: 20px;
 }
 
+.editieren #stückzahl{
+	width: 10.5em;
+}
+.editieren #laenge{
+	width: 10.5em;
+}
+.editieren #hoehe{
+	width: 10.5em;
+}
+.editieren #breite{
+	width: 10.5em;
+}
+.editieren #preis{
+	width: 10.5em;
+}
+.editieren #Anleitung{
+	font-size: 10pt;
+	font-weight: 501;
+}
+.editieren #textfeld2{
+	width: 250px;
+	height:80px;
+	margin-top:5px;
+
+}
+.editieren #suchbutton{
+	margin-right:10px;
+	margin-left:50px;
+	margin-top: 5px;
+}
+
 .editieren th{
 	padding-right: 2em;
 	border: 1px solid black;
