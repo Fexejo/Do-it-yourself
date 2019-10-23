@@ -244,6 +244,7 @@
 			<div id = Buttons>
 				<button = type="button">Bearbeiten</button>
 				<button = type="button">Hinzufügen</button>
+				<button = type="button">Löschen</button>
 			</div>
 
 		</main>
@@ -253,20 +254,42 @@
 		<main>
 			<h2>Materialliste</h2>
 
-	<h1>Ihre Gesamtliste</h1>
-			<div id="Tabelle">
+			<div id = "Listenanzeige">
+			<span id = "Bezeichnung"><b>Bezeichnung: </b>Stuhl Erna</span>
 					<!--Tabelle die die Materialien anzeigt-->
 			<table>
+				<thead>
 			  <tr>
 			    <th>Materialname</th>
 			    <th>Stückzahl</th>
 			    <th>Länge</th>
-				<th>Höhe</th>
-				<th>Breite</th>
-				<th>Preis</th>
+					<th>Höhe</th>
+					<th>Breite</th>
+					<th>Preis</th>
 			  </tr>
+			</thead>
+			<tbody>
+				<tr>
+				 <td><span><b>Materialname: </b></span>Holzbrett</td>
+				 <td><span><b>Stückzahl: </b></span>5</td>
+				 <td><span><b>Länge: </b></span>50,0 cm</td>
+				 <td><span><b>Höhe: </b></span>30,5 cm</td>
+				 <td><span><b>Breite: </b></span>2,5 cm</td>
+				 <td><span><b>Preis: </b></span>25,50€</td>
+			 </tr>
+		 </tbody>
 			</table>
+			<div id = "Preismöbel">
+				 <b>Möbelstückpreis gesamt:</b> 150,00€
+			 </div>
+			<div id = "Anleitung">
+				<span><b>Anleitung: </b>
+					<br>Schrauben, Hämmern -> Fertig!</br></span>
 			</div>
+		</div>
+		<div id = "Gesamtpreis">
+			<b>Gesamtpreis: 500€</b>
+		</div>
 		</main>
 	</section>
 
