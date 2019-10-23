@@ -52,6 +52,10 @@ body{
 	padding-top: 2em;
 }
 
+#app footer {
+	text-align: center;
+}
+
 /* Aenderungen fuer Tablets */
 @media (min-width: 30em) and (orientation: landscape) {
 #app header {
