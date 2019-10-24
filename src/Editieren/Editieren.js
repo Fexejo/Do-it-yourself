@@ -18,6 +18,7 @@ class Editieren {
     constructor(app, id) {
         this._app = app;
         this._id = id;
+        this._form = new EditierenForm(app._db, id);
     }
 
     /**
@@ -32,9 +33,8 @@ class Editieren {
     onShow() {
         let section = document.querySelector("#editieren").cloneNode(true);
         
-        
-        
-        
+        // Formular in den Dummy einfuegen
+        this._form.show(section.querySelector("#formDummy"));
         
         return {
             button: 2,

@@ -33,6 +33,7 @@ class Db {
 	}
 	
 	add(data) {
+		console.log("DB: add()");
 		return this._db.collection("moebel").add(data);
 	}
 }
