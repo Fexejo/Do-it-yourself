@@ -17,7 +17,7 @@
 	color: inherit;
 	margin-left: 20px;
 	text-decoration-line: underline;
-	margin-top: 45px;
+	margin-top: 60px;
 }
 
 .editieren img{
@@ -99,6 +99,27 @@
 	background-color: rgba(240,240,240,8);
 	border: none;
 }
+.editieren #Materialname{
+	width: 10.5em;
+	background-color: rgba(240,240,240,8);
+	border: none;
+}
+.editieren #Maßeinheit{
+	width: 10.5em;
+	background-color: rgba(240,240,240,8);
+	border: none;
+}
+.editieren #Maßeinheit2{
+	width: 10.5em;
+	background-color: rgba(240,240,240,8);
+	border: none;
+}
+.editieren #Maßeinheit3{
+	width: 10.5em;
+	background-color: rgba(240,240,240,8);
+	border: none;
+
+}
 .editieren #Anleitung{
 	font-size: 10pt;
 	font-weight: 501;
@@ -146,7 +167,7 @@
 
 /* Aenderungen fuer Tablets */
 @media (min-width: 30em) and (orientation: landscape) {
-	.editieren{
+ .editieren{
 	margin-left: 15px;
 	margin-right: 15px;
 	padding-bottom: 2em;
@@ -167,6 +188,221 @@
 	.editieren table input{
 		width: 100%;
 	}
+
+	.editieren h2 {
+		font-family: sans-serif;
+		font-size: 15pt;
+		color: inherit;
+		margin-left: 20px;
+		text-decoration-line: underline;
+		margin-top: 90px;
+		margin-left: 60px;
+	}
+
+	.editieren img{
+		width: 8%;
+		height: 8%;
+	}
+	.editieren #Bezeichnung{
+		background-color: rgba(240,240,240,0.5);
+		padding-top: 30px;
+		padding-bottom:30px;
+		padding-left: 50px;
+		font-family: sans-serif;
+		font-size: 11pt;
+		font-weight: 501;
+		color: inherit;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 40px;
+	;
+
+	}
+	.editieren #textfeld{
+		width: 400px;
+		height:40px;
+		margin-top:5px;
+		background-color: rgba(240,240,240,8);
+		padding-left: 50px;
+		margin-left: 10px;
+
+	}
+	.editieren #auswahl{
+		width:440px;
+		margin-top:30px;
+		margin-bottom: 0px;
+		margin-left: 40px;
+		background-color: rgba(240,240,240,8);
+
+	}
+	.editieren #Kategorie{
+		background-color: rgba(240,240,240,0.5);
+		font-family: sans-serif;
+		font-size: 11pt;
+		font-weight: 501;
+		color: inherit;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 9px;
+		padding-bottom:30px;
+		padding-left: 50px;
+	}
+	.editieren #Kalabel{
+		/* hier noch das Label verschieben, aber wie????*/
+	}
+
+	.editieren #durchsuchen{
+		margin-left: 200px;
+		background-color: rgba(240,240,240,8);
+
+
+
+	}
+	.editieren #durchsuchen1{
+			background-color: rgba(240,240,240,0.5);
+			margin-top: 10px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+
+	}
+	.editieren h1{
+		font-family: sans-serif;
+		font-size: 11pt;
+		color: inherit;
+		margin-top: 10px;
+		margin-bottom: 25px;
+		padding-top: 25px;
+		margin-left: 50px;
+	}
+
+	.editieren #table{
+		background-color: rgba(240,240,240,8);
+		margin-left: 40px;
+
+	}
+
+	.editieren #tabelle{
+		background-color: rgba(240,240,240,0.5);
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-bottom: 30px;
+
+	}
+.editieren th{
+	height: 25px;
+	background-color: rgba(220,220,220,0.8);
+	border: none;
+}
+.editieren td{
+	height: 27px;
+}
+	.editieren #stückzahl{
+		width: 7.5em;
+		height: 27px;
+		background-color: white;
+		border-style: solid;
+		border: none;
+		border-width: 1px;
+	}
+	.editieren #laenge{
+		width: 7.5em;
+		height: 27px;
+		background-color: white;
+		border-style: solid;
+		border: none;
+		border-width: 1px;
+
+	}
+	.editieren #hoehe{
+		width: 7.5em;
+		height: 27px;
+		background-color: white;
+		border-style: solid;
+		border: none;
+		border-width: 1px;
+	}
+	.editieren #breite{
+		width: 7.5em;
+		height: 27px;
+		background-color: white;
+		border-style: solid;
+		border-width: 1px;
+		border: none;
+	}
+	.editieren #preis{
+		width: 7.5em;
+		height: 27px;
+		background-color: white;
+		border-style: solid;
+		border: none;
+		border-width: 1px;
+	}
+.editieren #Materialname{
+	width: 9.5em;
+	height: 27px;
+	background-color: white;
+	border-style: solid;
+	border: none;
+}
+
+.editieren #Maßeinheit{
+	width: 7.5em;
+	height: 27px;
+	background-color: white;
+	border-style: solid;
+	border: none;
+}
+.editieren #Maßeinheit2{
+	width: 7.5em;
+	height: 27px;
+	background-color: white;
+	border-style: solid;
+	border: none;
+}
+.editieren #Maßeinheit3{
+	width: 7.5em;
+	height: 27px;
+	background-color: white;
+	border-style: solid;
+	border: none;
+}
+
+	.editieren #textfeld2{
+		width: 600px;
+		height:200px;
+		margin-left: 40px;
+		margin-bottom: 5px;
+		background-color: rgba(240,240,240,8);
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+	.editieren #Anleitung{
+		background-color: rgba(240,240,240,0.5);
+		font-size: 11pt;
+		padding-left: 20px;
+		padding-top: 20px;
+		margin-top: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.editieren #Anleitunglabel{
+	}
+
+	.editieren #Buttons1{
+	background-color: rgba(240,240,240,0.5);
+	margin-left: 20px;
+	margin-right: 20px;
+
+	}
+	.editieren #suchbutton{
+		margin-right:150px;
+		margin-left:200px;
+		margin-top: 1px;
+		margin-bottom: 20px;
+	}
 }
 
 /*  Aenderungen fuer Desktops */
@@ -186,7 +422,7 @@
 		color: inherit;
 		margin-left: 20px;
 		text-decoration-line: underline;
-		margin-top: 70px;
+		margin-top: 90px;
 		margin-left: 60px;
 	}
 
@@ -195,12 +431,17 @@
 		height: 8%;
 	}
 	.editieren #Bezeichnung{
+		background-color: rgba(240,240,240,0.5);
+		padding-top: 30px;
+		padding-bottom:30px;
+		padding-left: 50px;
 		font-family: sans-serif;
-		font-size: 12pt;
+		font-size: 11pt;
 		font-weight: 501;
 		color: inherit;
-		margin-left: 200px;
-		margin-top: 60px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 40px;
 	;
 
 	}
@@ -209,121 +450,185 @@
 		height:40px;
 		margin-top:5px;
 		background-color: rgba(240,240,240,8);
+		padding-left: 50px;
+		margin-left: 10px;
 
 	}
 	.editieren #auswahl{
-		width:405px;
-		margin-top:40px;
-		margin-bottom: 20px;
+		width:440px;
+		margin-top:30px;
+		margin-bottom: 0px;
+		margin-left: 40px;
 		background-color: rgba(240,240,240,8);
 
 	}
 	.editieren #Kategorie{
+		background-color: rgba(240,240,240,0.5);
 		font-family: sans-serif;
-		font-size: 12pt;
+		font-size: 11pt;
 		font-weight: 501;
 		color: inherit;
-		margin-left: 222px;
-		margin-top: 5px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 9px;
+		padding-bottom:30px;
+		padding-left: 50px;
+	}
+	.editieren #Kalabel{
+		/* hier noch das Label verschieben, aber wie????*/
 	}
 
 	.editieren #durchsuchen{
-		margin-left: 320px;
-		margin-top: 40px;
+		margin-left: 200px;
 		background-color: rgba(240,240,240,8);
+
+
+
+	}
+	.editieren #durchsuchen1{
+			background-color: rgba(240,240,240,0.5);
+			margin-top: 10px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+
 	}
 	.editieren h1{
 		font-family: sans-serif;
-		font-size: 12pt;
+		font-size: 11pt;
 		color: inherit;
-		margin-top: 30px;
-		margin-left: 30px;
+		margin-top: 10px;
+		margin-bottom: 25px;
+		padding-top: 25px;
+		margin-left: 50px;
 	}
 
 	.editieren #table{
-		margin-left: 30px;
 		background-color: rgba(240,240,240,8);
+		margin-left: 40px;
+
+	}
+
+	.editieren #tabelle{
+		background-color: rgba(240,240,240,0.5);
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-bottom: 30px;
 
 	}
 .editieren th{
-	height: 30px;
+	height: 25px;
 	background-color: rgba(220,220,220,0.8);
+	border: none;
 }
 .editieren td{
 	height: 27px;
 }
 	.editieren #stückzahl{
-		width: 10.5em;
+		width: 7.5em;
 		height: 27px;
 		background-color: white;
 		border-style: solid;
+		border: none;
 		border-width: 1px;
 	}
 	.editieren #laenge{
-		width: 10.5em;
+		width: 7.5em;
 		height: 27px;
 		background-color: white;
 		border-style: solid;
+		border: none;
 		border-width: 1px;
 
 	}
 	.editieren #hoehe{
-		width: 10.5em;
+		width: 7.5em;
 		height: 27px;
 		background-color: white;
 		border-style: solid;
+		border: none;
 		border-width: 1px;
 	}
 	.editieren #breite{
-		width: 10.5em;
+		width: 7.5em;
 		height: 27px;
 		background-color: white;
 		border-style: solid;
 		border-width: 1px;
+		border: none;
 	}
 	.editieren #preis{
-		width: 10.5em;
+		width: 7.5em;
 		height: 27px;
 		background-color: white;
 		border-style: solid;
+		border: none;
 		border-width: 1px;
 	}
-	.editieren #Anleitung{
-		font-size: 10pt;
-		font-weight: 501;
-		margin-left: 200px;
+.editieren #Materialname{
+	width: 9.5em;
+	height: 27px;
+	background-color: white;
+	border-style: solid;
+		border: none;
+}
 
-	}
+.editieren #Maßeinheit{
+	width: 7.5em;
+	height: 27px;
+	background-color: white;
+	border-style: solid;
+	border: none;
+}
+.editieren #Maßeinheit2{
+	width: 7.5em;
+	height: 27px;
+	background-color: white;
+	border-style: solid;
+	border: none;
+}
+.editieren #Maßeinheit3{
+	width: 7.5em;
+	height: 27px;
+	background-color: white;
+	border-style: solid;
+		border: none;
+}
+
 	.editieren #textfeld2{
 		width: 600px;
 		height:200px;
-		margin-top:50px;
-		margin-left: 200px;
+		margin-left: 40px;
+		margin-bottom: 5px;
 		background-color: rgba(240,240,240,8);
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+	.editieren #Anleitung{
+		background-color: rgba(240,240,240,0.5);
+		font-size: 11pt;
+		padding-left: 20px;
+		padding-top: 20px;
+		margin-top: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 
+	.editieren #Anleitunglabel{
+	}
 
-
+	.editieren #Buttons1{
+	background-color: rgba(240,240,240,0.5);
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 40px;
 
 	}
 	.editieren #suchbutton{
 		margin-right:150px;
-		margin-left:400px;
-		margin-top: 5px;
-		margin-bottom: 70px;
+		margin-left:200px;
+		margin-top: 1px;
+		margin-bottom: 20px;
 	}
-
-	.editieren #Anleitung{
-		font-family: sans-serif;
-		font-size: 12pt;
-		color: inherit;
-		margin-left: 20px;
-		margin-top: 30px;
-	}
-
-	.editieren h3{
-			margin-top: 10em;
-		}
-
-
-
 }

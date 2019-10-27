@@ -91,7 +91,7 @@
 			<form id="formDummy">
 			</form>
 		</main>
-		
+
 		<!-- Template für die Formularinhalte zum Bearbeiten der Möbelstücke -->
 <template id="EditierenForm">
 
@@ -101,7 +101,7 @@
 
 <!--Kategorie als Scrollliste-->
 				<div id="Kategorie">
-			  <label>Kategorie:</label>
+			  <label id="Kalabel">Kategorie:</label>
 			    <select id = "auswahl"name="Kat" size="4">
 			      <option>Tisch</option>
 			      <option>Sitzgelegenheit</option>
@@ -111,12 +111,12 @@
 			    </select>
 		</div>
 
-		<div>
+		<div id="durchsuchen1">
 			<input id="durchsuchen" type="file" accept="image/*">
 		</div>
 
-		<div>
-		<h1>Benötigte Materialien</h1>
+		<div id="tabelle">
+		<h1>Benötigte Materialien:</h1>
 
 		<!--Tabelle um die Materialien einzutragen-->
 
@@ -136,14 +136,14 @@
 		</thead>
 		<tbody>
 			<tr>
-			 <td><span>Materialname:</span><input type = "text"></td>
+			 <td><span>Materialname:</span><input id= "Materialname" type = "text"></td>
 			 <td><span>Stückzahl:</span><input id="stückzahl"type = "number" min ="1" step ="1"></td>
 			 <td><span>Länge:</span><input id="laenge" type = "number" min ="0" step ="0.01"></td>
-			 <td><span>Maßeinheit:</span><input type = "text"></td>
+			 <td><span>Maßeinheit:</span><input id= "Maßeinheit" type = "text"></td>
 			 <td><span>Höhe:</span><input id="hoehe" type = "number" min ="0" step ="0.01"></td>
-			 <td><span>Maßeinheit:</span><input type = "text"></td>
+			 <td><span>Maßeinheit:</span><input type id= "Maßeinheit2" = "text"></td>
 			 <td><span>Breite:</span><input id="breite" type="number" min ="0" step ="0.01"></td>
-			 <td><span>Maßeinheit:</span><input type = "text"></td>
+			 <td><span>Maßeinheit:</span><input id= "Maßeinheit3"type = "text"></td>
 			 <td><span>Preis:</span><input id="preis" type= "number" min ="0" step ="0.01" ></td>
 		 </tr>
 	</tbody>
@@ -151,10 +151,10 @@
 		</div>
 
 		<div id="Anleitung">
-			Anleitung: <textarea id= "textfeld2"placeholder="Bitte Text eingeben"></textarea>
+		<label id= "Anleitunglabel">	Anleitung: </label> <textarea id= "textfeld2"placeholder="Bitte Text eingeben..."></textarea>
 		</div>
 
-		<div>
+		<div id= "Buttons1">
 			<input id="suchbutton" type="submit" value="Speichern">
 			<input id="resetbutton" type="reset">
 </template>
