@@ -7,6 +7,10 @@
 			font-size: 12pt;
 			font-family: sans-serif;
 }
+.Suchergebnis a{
+	width: 100%;
+	display: inline-block;
+}
 .suchen h2 {
 	font-size: 18pt;
 	color: inherit;

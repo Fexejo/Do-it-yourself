@@ -44,6 +44,82 @@ margin-right: 1em;
 	margin-bottom: 0.5em;
 }
 
+/* Kommentarfunktion innerhalb der Anzeigenseite*/
+
+
+.anzeigen #Kommentarbody {
+  width: 70%;
+  margin-left: 1em;
+  display: block;
+}
+
+.anzeigen comment {
+  display: inherit;
+  border-radius: 1em;
+  padding: 0.5em;
+  color: white;
+  margin-bottom: 1em;
+	width: 70%;
+	margin-left: 1em;
+	margin-top: 1.5em;
+}
+
+.anzeigen .pink {
+  background-color: rgb(255, 153, 153, 0.9) !important;
+}
+
+.anzeigen .green {
+  background-color: #2e7d32 !important;
+}
+
+.anzeigen .blue {
+  background-color: #283593 !important;
+}
+
+.anzeigen .red {
+  background-color: #c62828 !important;
+}
+
+.anzeigen  .orange {
+  background-color: #f57c00 !important;
+}
+
+.anzeigen .black {
+  background-color: #000000 !important;
+}
+
+.anzeigen textarea {
+  display: inherit;
+  width: 100%;
+  border: 2px #b0bec5 solid;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.anzeigen input {
+  display: grid;
+  background-color: rgba(51,51,51, 0.8);
+	color: white;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: none;
+  border: none;
+  font-weight: bold;
+  margin-right: 1em;
+  margin-top: 2ex;
+	margin-bottom: 1em;
+}
+.anzeigen input:hover {
+  background-color: #00b2cc;
+}
+
+.anzeigen time {
+  color: lightgrey;
+  display: block;
+  margin-top: 1ex;
+  font-style: italic;
+}
+
 /* Aenderungen fuer Tablets */
 @media (min-width: 30em) and (orientation: landscape) {
 
@@ -62,6 +138,9 @@ margin-right: 1em;
 	}
 	.anzeigen span {
 		display: none;
+	}
+	.anzeigen comment {
+		width: 30%;
 	}
 
 }
