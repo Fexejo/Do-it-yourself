@@ -8,13 +8,15 @@ class EditierenForm {
 		if (this._id != "") {
 			// ID wurde uebergeben, versuche doc aus DB zu holen
 			this._db.getById(this._id).then(doc => {
-				if (!doc.empty) {
+				if (doc.exists) {
 					// Inhalte gefunden
 					this._data = doc;
 					console.log(this._data);
+					this.show(document.getElementById("formDummy"));
 				} else {
 					// ID nicht in DB vorhanden
 					console.log("ID nicht in DB gefunden.");
+					// erstmal nichts weiter tun
 					
 				}
 			}).catch(e => {
@@ -55,7 +57,43 @@ class EditierenForm {
 	}
 	
 	_fill(c) {
-		c.querySelector("#textfeld").value = "Jojo";
+		// Daten aus DocumentSnapshot holen
+		let data = this._data.data();
+		
+		// Bezeichnung und Anleitung einfach als value setzen
+		c.querySelector("#textfeld").value = data.bezeichnung;
+		c.querySelector("#textfeld2").value = data.anleitung;
+		
+		// Kategorie setzen
+		c.querySelectorAll("#auswahl option").forEach(o => {
+			if (o.innerHTML == data.kategorie) {
+				o.selected = "selected";
+			}
+		});
+		
+		// Liste der Materialien
+		let tbody = c.querySelector("tbody");
+		tbody.innerHTML = "";
+		console.log(data.material);
+		for (let i in data.material) {
+			let m = data.material[i];
+			let newRow = this._tr.cloneNode(true);
+			let inputs = newRow.querySelectorAll("input");
+			
+			inputs[0].value = m.Materialname;
+			inputs[1].value = m.Stueckzahl;
+			inputs[2].value = m.Laenge;
+			inputs[3].value = m.LaengeEinheit;
+			inputs[4].value = m.Hoehe;
+			inputs[5].value = m.HoeheEinheit;
+			inputs[6].value = m.Breite;
+			inputs[7].value = m.BreiteEinheit;
+			inputs[8].value = m.Preis;
+			
+			tbody.appendChild(newRow);
+		}
+		
+		
 		return c;
 	}
 	
