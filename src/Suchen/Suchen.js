@@ -29,10 +29,8 @@ class Suchen {
         let section = document.querySelector("#suchen").cloneNode(true);
         
         //this._app.overlay.showAlert("Die Datenbank ist noch leer. Füge erst Möbelstücke hinzu, damit Du suchen kannst.");
-        this._app._db.getAll().then(data => {
-           data.forEach(doc => {
-               console.log(doc.data());
-           });
+        this._app._db.getAll().then((data) => {
+           this.showSearchResults(data);
         });
         
         return {
@@ -60,6 +58,23 @@ class Suchen {
      */
     get title() {
         return "Suchen: " + this._searchString;
+    }
+    
+    showSearchResults(res) {
+        let template = document.getElementById("suchergebnis").content.cloneNode(true);
+        let parentNode = document.getElementById("Suchanzeige");
+        
+        res.forEach(doc => {
+           let div = template.cloneNode(true);
+           div.querySelector("a").href = "/anzeigen/" + doc.id;
+           div.querySelector("img").alt = doc.data().bezeichnung;
+           
+           let spans = div.querySelectorAll("span");
+           spans[0].innerHTML = doc.data().bezeichnung;
+           spans[1].innerHTML = doc.data().kategorie;
+           
+           parentNode.appendChild(div);
+        });
     }
 }
 
