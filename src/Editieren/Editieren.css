@@ -137,7 +137,7 @@
 }
 .editieren #suchbutton{
 	margin-right:10px;
-	margin-left:50px;
+	margin-left: 90px;
 	margin-top: 5px;
 }
 
@@ -204,7 +204,7 @@
 		height: 8%;
 	}
 	.editieren #Bezeichnung{
-		background-color: rgba(240,240,240,0.5);
+		background-color:rgba(51,51,51,0.2);
 		padding-top: 30px;
 		padding-bottom:30px;
 		padding-left: 50px;
@@ -236,7 +236,7 @@
 
 	}
 	.editieren #Kategorie{
-		background-color: rgba(240,240,240,0.5);
+		background-color:rgba(51,51,51,0.2);
 		font-family: sans-serif;
 		font-size: 11pt;
 		font-weight: 501;
@@ -259,7 +259,7 @@
 
 	}
 	.editieren #durchsuchen1{
-			background-color: rgba(240,240,240,0.5);
+			background-color:rgba(51,51,51,0.2);
 			margin-top: 10px;
 			padding-top: 20px;
 			padding-bottom: 20px;
@@ -284,7 +284,7 @@
 	}
 
 	.editieren #tabelle{
-		background-color: rgba(240,240,240,0.5);
+		background-color:rgba(51,51,51,0.2);
 		margin-left: 20px;
 		margin-right: 20px;
 		padding-bottom: 30px;
@@ -301,7 +301,7 @@
 	.editieren #stückzahl{
 		width: 7.5em;
 		height: 27px;
-		background-color: white;
+		background-color:#F2F2F2;
 		border-style: solid;
 		border: none;
 		border-width: 1px;
@@ -309,7 +309,7 @@
 	.editieren #laenge{
 		width: 7.5em;
 		height: 27px;
-		background-color: white;
+		background-color:#F2F2F2;
 		border-style: solid;
 		border: none;
 		border-width: 1px;
@@ -318,7 +318,7 @@
 	.editieren #hoehe{
 		width: 7.5em;
 		height: 27px;
-		background-color: white;
+		background-color: #F2F2F2;
 		border-style: solid;
 		border: none;
 		border-width: 1px;
@@ -326,7 +326,7 @@
 	.editieren #breite{
 		width: 7.5em;
 		height: 27px;
-		background-color: white;
+		background-color:#F2F2F2;
 		border-style: solid;
 		border-width: 1px;
 		border: none;
@@ -334,7 +334,7 @@
 	.editieren #preis{
 		width: 7.5em;
 		height: 27px;
-		background-color: white;
+		background-color: #F2F2F2;
 		border-style: solid;
 		border: none;
 		border-width: 1px;
@@ -342,7 +342,7 @@
 .editieren #Materialname{
 	width: 9.5em;
 	height: 27px;
-	background-color: white;
+	background-color: #F2F2F2;
 	border-style: solid;
 	border: none;
 }
@@ -350,21 +350,21 @@
 .editieren #Maßeinheit{
 	width: 7.5em;
 	height: 27px;
-	background-color: white;
+	background-color: #F2F2F2;
 	border-style: solid;
 	border: none;
 }
 .editieren #Maßeinheit2{
 	width: 7.5em;
 	height: 27px;
-	background-color: white;
+	background-color: #F2F2F2;
 	border-style: solid;
 	border: none;
 }
 .editieren #Maßeinheit3{
 	width: 7.5em;
 	height: 27px;
-	background-color: white;
+	background-color: #F2F2F2;
 	border-style: solid;
 	border: none;
 }
@@ -379,7 +379,7 @@
 		padding-top: 20px;
 	}
 	.editieren #Anleitung{
-		background-color: rgba(240,240,240,0.5);
+		background-color:rgba(51,51,51,0.2);
 		font-size: 11pt;
 		padding-left: 20px;
 		padding-top: 20px;
@@ -392,7 +392,7 @@
 	}
 
 	.editieren #Buttons1{
-	background-color: rgba(240,240,240,0.5);
+	background-color:rgba(51,51,51,0.2);
 	margin-left: 20px;
 	margin-right: 20px;
 
@@ -431,12 +431,13 @@
 		height: 8%;
 	}
 	.editieren #Bezeichnung{
-		background-color: rgba(240,240,240,0.5);
+		/*background-color: rgba(240,240,240,0.5);*/
+		background-color:rgba(51,51,51,0.2);
 		padding-top: 30px;
 		padding-bottom:30px;
 		padding-left: 50px;
 		font-family: sans-serif;
-		font-size: 11pt;
+		font-size: 12pt;
 		font-weight: 501;
 		color: inherit;
 		margin-left: 20px;
@@ -463,9 +464,10 @@
 
 	}
 	.editieren #Kategorie{
-		background-color: rgba(240,240,240,0.5);
+		/*background-color: rgba(240,240,240,0.5);*/
+		background-color:rgba(51,51,51,0.2);
 		font-family: sans-serif;
-		font-size: 11pt;
+		font-size: 12pt;
 		font-weight: 501;
 		color: inherit;
 		margin-left: 20px;
@@ -475,6 +477,8 @@
 		padding-left: 50px;
 	}
 	.editieren #Kalabel{
+		display: inline-block;
+		margin-top: 3px;
 		/* hier noch das Label verschieben, aber wie????*/
 	}
 
@@ -486,7 +490,7 @@
 
 	}
 	.editieren #durchsuchen1{
-			background-color: rgba(240,240,240,0.5);
+			background-color:rgba(51,51,51,0.2);
 			margin-top: 10px;
 			padding-top: 20px;
 			padding-bottom: 20px;
@@ -511,7 +515,7 @@
 	}
 
 	.editieren #tabelle{
-		background-color: rgba(240,240,240,0.5);
+		background-color:rgba(51,51,51,0.2);
 		margin-left: 20px;
 		margin-right: 20px;
 		padding-bottom: 30px;
@@ -528,7 +532,7 @@
 	.editieren #stückzahl{
 		width: 7.5em;
 		height: 27px;
-		background-color: white;
+		background-color: #F2F2F2;
 		border-style: solid;
 		border: none;
 		border-width: 1px;
@@ -536,7 +540,7 @@
 	.editieren #laenge{
 		width: 7.5em;
 		height: 27px;
-		background-color: white;
+		background-color: #F2F2F2;
 		border-style: solid;
 		border: none;
 		border-width: 1px;
@@ -545,7 +549,7 @@
 	.editieren #hoehe{
 		width: 7.5em;
 		height: 27px;
-		background-color: white;
+		background-color: #F2F2F2;
 		border-style: solid;
 		border: none;
 		border-width: 1px;
@@ -553,7 +557,7 @@
 	.editieren #breite{
 		width: 7.5em;
 		height: 27px;
-		background-color: white;
+		background-color: #F2F2F2;
 		border-style: solid;
 		border-width: 1px;
 		border: none;
@@ -561,7 +565,7 @@
 	.editieren #preis{
 		width: 7.5em;
 		height: 27px;
-		background-color: white;
+		background-color:#F2F2F2;
 		border-style: solid;
 		border: none;
 		border-width: 1px;
@@ -569,7 +573,7 @@
 .editieren #Materialname{
 	width: 9.5em;
 	height: 27px;
-	background-color: white;
+	background-color: #F2F2F2;
 	border-style: solid;
 		border: none;
 }
@@ -577,21 +581,21 @@
 .editieren #Maßeinheit{
 	width: 7.5em;
 	height: 27px;
-	background-color: white;
+	background-color: #F2F2F2;
 	border-style: solid;
 	border: none;
 }
 .editieren #Maßeinheit2{
 	width: 7.5em;
 	height: 27px;
-	background-color: white;
+	background-color: #F2F2F2;
 	border-style: solid;
 	border: none;
 }
 .editieren #Maßeinheit3{
 	width: 7.5em;
 	height: 27px;
-	background-color: white;
+	background-color: #F2F2F2;
 	border-style: solid;
 		border: none;
 }
@@ -606,8 +610,8 @@
 		padding-top: 20px;
 	}
 	.editieren #Anleitung{
-		background-color: rgba(240,240,240,0.5);
-		font-size: 11pt;
+		background-color:rgba(51,51,51,0.2);
+		font-size: 12pt;
 		padding-left: 20px;
 		padding-top: 20px;
 		margin-top: 10px;
@@ -619,7 +623,7 @@
 	}
 
 	.editieren #Buttons1{
-	background-color: rgba(240,240,240,0.5);
+	background-color:rgba(51,51,51,0.2);
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 40px;
