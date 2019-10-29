@@ -4,6 +4,23 @@ class EditierenForm {
 	constructor(db, id) {
 		this._db = db;
 		this._id = id;
+		
+		if (this._id != "") {
+			// ID wurde uebergeben, versuche doc aus DB zu holen
+			this._db.getById(this._id).then(doc => {
+				if (!doc.empty) {
+					// Inhalte gefunden
+					this._data = doc;
+					console.log(this._data);
+				} else {
+					// ID nicht in DB vorhanden
+					console.log("ID nicht in DB gefunden.");
+					
+				}
+			}).catch(e => {
+				console.log("ERROR");
+			});
+		}
 	}
 	
 	show(parentNode) {

@@ -45,6 +45,7 @@ class App {
         this._router.on({
             "*":                    () => this.showStart(""),
             "/editieren":           () => this.showEditieren(""),
+            "/editieren/:id":        params => this.showEditieren(params.id),
             "/suchen":             () => this.showSuchen(""),
             "/suchen/:searchString": params => this.showSuchen(params.searchString),
             "/anzeigen":            () => this.showAnzeigen(""),

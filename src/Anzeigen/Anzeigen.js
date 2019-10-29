@@ -28,7 +28,13 @@ class Anzeigen {
      */
     onShow() {
         let section = document.querySelector("#anzeigen").cloneNode(true);
-    
+        
+        // Datenbankanfrage mit der uebergebenen ID absetzten
+        this._app._db.getById(this._id).then(doc => {
+            console.log(doc.data());
+        });
+        
+        
         return {
             button: 3,
             className: "anzeigen",
