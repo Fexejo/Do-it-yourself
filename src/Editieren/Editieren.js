@@ -18,7 +18,7 @@ class Editieren {
     constructor(app, id) {
         this._app = app;
         this._id = id;
-        this._form = new EditierenForm(app._db, id);
+        this._form = new EditierenForm(app, app._db, id);
     }
 
     /**

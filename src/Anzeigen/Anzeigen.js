@@ -29,10 +29,63 @@ class Anzeigen {
     onShow() {
         let section = document.querySelector("#anzeigen").cloneNode(true);
 
-        // Datenbankanfrage mit der uebergebenen ID absetzten
+        // Datenbankanfrage mit der uebergebenen ID absetzen
         this._app._db.getById(this._id).then(doc => {
+            // Daten zum Anzeigen geladen
             console.log(doc.data());
-            this.Kommentarerstellen();
+            
+            // main Bereich zum manipulieren getten
+            let main = document.querySelector(".anzeigen");
+            
+            // Bezeichnung in die Ueberschrift setzen
+            main.querySelector("h2").textContent = doc.data().bezeichnung;
+            
+            // Kategorie in den #Kopf-DIV
+            main.querySelector("#Kopf").firstChild.textContent = "Kategorie: " + doc.data().kategorie;""
+            
+            // Anleitung  in den p des #Anleitung-DIV
+            main.querySelector("#Anleitung > p").innerHTML = doc.data().anleitung.replace(/\n/g, "<br>");
+            
+            // Liste der Materialien
+            let tbody = main.querySelector("tbody");
+            let tr = tbody.querySelector("tr").cloneNode(true);
+            tbody.innerHTML = "";
+            
+            let m = doc.data().material;
+            for (let i in m) {
+                let newRow = tr.cloneNode(true);
+                let cells = newRow.querySelectorAll("td");
+                
+                cells[0].lastChild.textContent = m[i].Materialname;
+                cells[1].lastChild.textContent = m[i].Stueckzahl;
+                cells[2].lastChild.textContent = m[i].Laenge + m[i].LaengeEinheit;
+                cells[3].lastChild.textContent = m[i].Hoehe + m[i].HoeheEinheit;
+                cells[4].lastChild.textContent = m[i].Breite + m[i].BreiteEinheit;
+                cells[5].lastChild.textContent = m[i].Preis + " €"
+                
+                tbody.appendChild(newRow);
+            }
+            
+            // Listener fuer die Buttons
+            let buttons = main.querySelectorAll("#Buttons button");
+            
+            // 0: Bearbeiten
+            buttons[0].addEventListener("click", e => {
+                this._app._router.navigate("/editieren/" + this._id);
+            });
+            
+            // 1: Hinzufuegen (Materialliste)
+            
+            
+            // 2: Loeschen
+            buttons[2].addEventListener("click", e => {
+                this._app._db.delete(this._id).then(res => {
+                    this._app.overlay.showAlert("Gelöscht", () => {
+                        this._app.overlay._hide();
+                        this._app._router.navigate("/suchen");
+                    });
+                })
+            });
         });
 
 

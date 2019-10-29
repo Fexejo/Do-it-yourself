@@ -33,8 +33,15 @@ class Db {
 	}
 	
 	add(data) {
-		console.log("DB: add()");
 		return this._db.collection("moebel").add(data);
+	}
+	
+	delete(id) {
+		return this._db.collection("moebel").doc(id).delete();
+	}
+	
+	update(id, data) {
+		return this._db.collection("moebel").doc(id).update(data)
 	}
 }
 

@@ -1,7 +1,8 @@
 "use strict";
 
 class EditierenForm {
-	constructor(db, id) {
+	constructor(app, db, id) {
+		this._app = app;
 		this._db = db;
 		this._id = id;
 		
@@ -93,25 +94,32 @@ class EditierenForm {
 			tbody.appendChild(newRow);
 		}
 		
-		
 		return c;
 	}
 	
 	save() {
 		if (this._id) {
 			// vorhanden -> update
+			this._db.update(this._id, this.getData()).then(res => {
+				console.log(this);
+				this._app.overlay.showAlert("Daten wurden erfolgreich aktualisiert.", () => {
+					this._app.overlay._hide();
+					this._app._router.navigate("/anzeigen/" + this._id);
+				});
+			});
+			
 			
 		} else {
 			// neues doc anlegen
-			console.log("Saving...");
 			this._db.add(this.getData()).then(m => {
-				console.log("Result:");
-				console.log(m);
+				this._app.overlay.showAlert("Möbelstück wurde gespeichert.", () => {
+					this._app.overlay._hide();
+					this._app._router.navigate("/suchen");
+				});
 			}).catch(e => {
-				console.log("Error");
+				console.log("Error beim Saven von Data");
 				console.log(e);
 			})
-			console.log("done.");
 		}
 	}
 	
@@ -131,18 +139,21 @@ class EditierenForm {
 		let rows = domEl.querySelectorAll("#table tbody tr");
 		rows.forEach(row => {
 			let inputs = row.querySelectorAll("input");
-			ret.material[counter] = {
-				Materialname: 	inputs[0].value,
-				Stueckzahl:		inputs[1].value,
-				Laenge:			inputs[2].value,
-				LaengeEinheit:	inputs[3].value,
-				Hoehe:			inputs[4].value,
-				HoeheEinheit:	inputs[5].value,
-				Breite:			inputs[6].value,
-				BreiteEinheit:	inputs[7].value,
-				Preis:			inputs[8].value,
-			};
-			counter++;
+			if (inputs[0].value != "") {
+				// Zeile nur speichern, wenn Materialname gesetzt ist
+				ret.material[counter] = {
+					Materialname: 	inputs[0].value,
+					Stueckzahl:		inputs[1].value,
+					Laenge:			inputs[2].value,
+					LaengeEinheit:	inputs[3].value,
+					Hoehe:			inputs[4].value,
+					HoeheEinheit:	inputs[5].value,
+					Breite:			inputs[6].value,
+					BreiteEinheit:	inputs[7].value,
+					Preis:			inputs[8].value,
+				};
+				counter++;
+			}
 		});
 		
 		
