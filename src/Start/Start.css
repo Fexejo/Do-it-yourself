@@ -26,10 +26,11 @@
 
 }
 .start #text{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     /*background-color:#FBFBEF*/
     background-color: rgba(240,240,240,0.5);
+
     /*opacity: 0.5;*/
     padding-left: 10px;
     padding-bottom:5px;
@@ -53,7 +54,7 @@ padding-left: 20px;
 padding-top: 10px;
 padding-bottom: 10px;
 font-size: 9pt;
-background-color:rgba(240,240,240,0.8);;
+background-color:rgba(240,240,240,0.5);
 }
 
 .start #button1:hover, .start #button2:hover, .start #button3:hover{
