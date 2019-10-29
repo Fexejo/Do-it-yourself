@@ -65,14 +65,11 @@ body{
 #app footer {
 	text-align: center;
 	width: 100%;
-	height: 3em;
+	height: 2em;
 	left: 0;
 	top: 0;
-/*	margin-left: -8px;
-	padding-right:200px;
-	*/
-	padding-top: 20px;
-	font-size: 7pt;
+	padding-top: 15px;
+	font-size: 9pt;
 	color: white;
 	background-color:rgba(51,51,51,0.8);
 
@@ -82,7 +79,18 @@ body{
 @media (min-width: 30em) and (orientation: landscape) {
 #app header {
 	background-color: red;
+	height: 4em;
 
+}
+
+#app header img{
+	width: 2.5em;
+}
+
+#app footer{
+	height: 3em;
+	padding-top: 25px;
+	font-size: 9pt;
 }
 
 }
@@ -97,6 +105,8 @@ body{
 #app footer{
 	background-color:rgba(51,51,51,0.8);
 	height: 4em;
+	font-size: 11pt;
+	padding-top: 35px;
 }
 #app header img{
 margin-top: 10px;
