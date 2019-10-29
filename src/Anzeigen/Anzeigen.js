@@ -28,13 +28,14 @@ class Anzeigen {
      */
     onShow() {
         let section = document.querySelector("#anzeigen").cloneNode(true);
-        
+
         // Datenbankanfrage mit der uebergebenen ID absetzten
         this._app._db.getById(this._id).then(doc => {
             console.log(doc.data());
+            this.Kommentarerstellen();
         });
-        
-        
+
+
         return {
             button: 3,
             className: "anzeigen",
@@ -61,6 +62,42 @@ class Anzeigen {
     get title() {
         return "Suche" + this._id;
     }
+
+
+    Kommentarerstellen(){
+
+
+    document.querySelector("input").addEventListener("click", submitListener);
+    window.addEventListener("keypress", (event) => {
+      console.log(event.key + " pressed");
+      if(event.key == 'Enter') {
+        event.preventDefault();
+        submitListener();
+      }
+    });
+
+
+  console.log("js found");
+
+  let submitListener = (event) => {
+    let text = document.querySelector("#Kommentarbody textarea").value;
+    console.log(text);
+    let commi = document.getElementById("comments");
+    let newComment = document.createElement("commi");
+    newComment.classList.remove ("hellbraun");
+    newComment.classList.add ("braun");
+    let time = document.createElement("time");
+
+    newComment.textContent = text;
+    let now = new Date();
+    time.textContent = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+
+    newComment.appendChild(time);
+    comments.appendChild(newComment);
+    document.querySelector("textarea").value="";
+  }
+}
+
 }
 
 export default Anzeigen;
