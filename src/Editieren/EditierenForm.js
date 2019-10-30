@@ -17,6 +17,10 @@ class EditierenForm {
 				} else {
 					// ID nicht in DB vorhanden
 					console.log("ID nicht in DB gefunden.");
+					
+					// ID loeschen, damit kein Update versucht wird
+					this._id = "";
+					
 					// erstmal nichts weiter tun
 					
 				}
@@ -45,9 +49,22 @@ class EditierenForm {
 		});
 		
 		// EventListener fuer neue Tabellenzeilen registrieren
-		c.querySelector("thead").addEventListener("click", e => {
-			document.querySelector("#table tbody").appendChild(this._tr.cloneNode(true));
-		});
+		let blurListener = e => {
+			if (e.srcElement.value) {
+				// Etwas in Materialname eingegeben -> neue Zeile anfuegen
+				let newRow = this._tr.cloneNode(true);
+				
+				// Diesen Listener auf die neue Zeile registrieren
+				newRow.querySelector("input").addEventListener("blur", blurListener);
+				
+				// Diesen Listener von der vormals letzten Zeile entfernen
+				e.srcElement.removeEventListener("blur", blurListener);
+				
+				// neue Zeile an Tabelle haengen
+				document.querySelector("#table tbody").appendChild(newRow);
+			}
+		}
+		c.querySelector("tbody input").addEventListener("blur", blurListener);
 		
 		
 		// Dummy leeren
@@ -55,6 +72,10 @@ class EditierenForm {
 		
 		// Formular in den Dummy einhaengen
 		parentNode.appendChild(c);
+	}
+	
+	_blurListener(e) {
+		
 	}
 	
 	_fill(c) {
