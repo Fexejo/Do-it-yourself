@@ -55,7 +55,16 @@ padding-top: 10px;
 padding-bottom: 10px;
 font-size: 9pt;
 background-color:rgba(240,240,240,0.5);
+width: 100%;
 }
+
+.start a{
+  text-decoration: none;
+  color:inherit;
+  display: inline-block;
+  width: 100%
+}
+
 
 .start #button1:hover, .start #button2:hover, .start #button3:hover{
   color: orange;

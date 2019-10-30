@@ -7,7 +7,7 @@
 			font-size: 12pt;
 			font-family: sans-serif;
 }
-.Suchergebnis a{
+.suchen .Suchergebnis a{
 	width: 100%;
 	display: inline-block;
 }
