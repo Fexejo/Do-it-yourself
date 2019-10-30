@@ -2,8 +2,8 @@
 
 .suchen {
 		background-color: rgba(200, 200,200, 0.7);
-		margin-left: 0.5em;
-			margin-right: 0.5em;
+		margin-left: 0.9em;
+			margin-right: 0.9em;
 			font-size: 12pt;
 			font-family: sans-serif;
 }
@@ -14,7 +14,8 @@
 .suchen h2 {
 	font-size: 18pt;
 	color: inherit;
-	margin-top: 1em;
+	margin-top: 2.5em;
+	margin-left: 20px;
 }
 
 .suchen #Button{
@@ -40,7 +41,10 @@
 /* Aenderungen fuer Tablets */
 @media (min-width: 992px) {
 .suchen h2{
-	font-size: 22pt;
+	font-size: 20pt;
+	color: inherit;
+	margin-top: 2.5em;
+	margin-left: 20px;
 }
 .suchen #Suchleiste{
 	font-size: 16pt;
@@ -56,5 +60,36 @@
 
 /*  Aenderungen fuer Desktops */
 @media (min-width: 1200px) {
+
+.suchen h2{
+	font-size: 19pt;
+	color: inherit;
+	margin-top: 3em;
+	margin-left: 20px;
+	text-decoration-line: underline;
+	margin-bottom: 40px;
+}
+.suchen #Suchleiste{
+	margin-right: 2em;
+	margin-left: 1em;
+	padding-left: 4em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color:rgba(204,102,51,0.8);
+	font-size: 13pt;
+
+}
+
+.suchen #suche{
+	width: 400px;
+	height: 35px;
+	padding-left: 1em;
+	background-color: rgba(240,240,240,0.88);
+	border: none;
+}
+.suchen #Suchanzeige{
+	width: 60%;
+	margin-left: 16em;
+}
 
 }

@@ -116,20 +116,18 @@
 
 /*  Aenderungen fuer Desktops */
 @media (min-width: 75em) {
-.materialliste{
-	font-size: 15pt;
-}
+
 .materialliste {
 	background-color: rgba(200, 200,200, 0.7);
 	margin-left: 15px;
 	margin-right: 15px;
-	font-size: 12pt;
+	font-size: 15pt;
 	padding-bottom: 10em;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 .materialliste th, td{
-	font-size: 15pt;
+	font-size: 14pt;
 }
 .materialliste h2{
 	font-size: 20pt;
