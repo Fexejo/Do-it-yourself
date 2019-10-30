@@ -48,14 +48,29 @@
 }
 .suchen #Suchleiste{
 	font-size: 16pt;
+		margin-left: 1em;
+		padding-left: 4em;
+		margin-right: 1em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		background-color:rgba(204,102,51,0.8);
+		font-size: 13pt;
 }
 .suchen #Suchanzeige{
 	width: 60%;
+		margin-left: 16em;
+
 
 }
 .suchen #Suchergebnis{
 	margin-right: 2em;
 }
+.suchen #suche{
+	width: 400px;
+	height: 35px;
+	padding-left: 1em;
+	background-color: rgba(240,240,240,0.88);
+	border: none;
 }
 
 /*  Aenderungen fuer Desktops */
