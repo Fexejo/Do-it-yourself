@@ -49,13 +49,20 @@ margin-top: 15px;
 border-width: 1.5px;
 border-style: solid;
 border-color: black;
-padding-right: 15px;
-padding-left: 20px;
-padding-top: 10px;
-padding-bottom: 10px;
 font-size: 9pt;
 background-color:rgba(240,240,240,0.5);
 }
+
+.start a{
+  text-decoration: none;
+  color:inherit;
+  display: inline-block;
+  width: 100%;
+  padding-left: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 
 .start #button1:hover, .start #button2:hover, .start #button3:hover{
   color: orange;
@@ -95,10 +102,7 @@ background-color:rgba(240,240,240,0.5);
 
   .start #button1, .start #button2, .start #button3{
     max-width: 30%;
-    padding-top: 20px;
-    padding-bottom: 20px;
     font-size: 12pt;
-    padding-left: 90px;
     margin-left: 200px;
   font-size: 12pt;
   }
@@ -134,10 +138,7 @@ background-color:rgba(240,240,240,0.5);
 
   .start #button1, .start #button2, .start #button3{
   max-width: 30%;
-  padding-top: 20px;
-  padding-bottom: 20px;
   font-size: 12pt;
-  padding-left: 100px;
   margin-left: 200px;
   }
 
