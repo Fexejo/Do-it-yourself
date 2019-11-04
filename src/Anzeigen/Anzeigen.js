@@ -77,7 +77,18 @@ class Anzeigen {
             });
 
             // 1: Hinzufuegen (Materialliste)
-
+            if (this._app.MlSpeicher.contains(this._id)) {
+                buttons[1].innerHTML = "Entfernen";
+            }
+            buttons[1].addEventListener("click", e => {
+               if (this._app.MlSpeicher.toggle(this._id) ) {
+                   // jetzt in der Materialliste
+                   buttons[1].innerHTML = "Entfernen";
+               } else {
+                   // jetzt nicht in der Materialliste
+                   buttons[1].innerHTML = "Hinzufügen";
+               }
+            });
 
             // 2: Loeschen
             buttons[2].addEventListener("click", e => {

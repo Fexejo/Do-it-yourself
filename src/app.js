@@ -14,6 +14,9 @@ import Db from "./db.js";
 // Overlay laden
 import Overlay from "./Overlay/Overlay.js";
 
+// Zwischenspeicherklasse fuer die Materialliste laden
+import MateriallisteSpeicher from "./Materialliste/MateriallisteSpeicher.js";
+
 // Viewklassen laden
 import Start from "./Start/Start.js";
 import Editieren from "./Editieren/Editieren.js";
@@ -33,6 +36,9 @@ class App {
         
         // ...und jetzt von der DB
         this._db = new Db();
+        
+        // ...und nun die des Speichers fuer die Materialliste
+        this.MlSpeicher = new MateriallisteSpeicher();
         
         this._title = "Do it yourself!";
         this._currentView = null;

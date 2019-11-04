@@ -25,9 +25,9 @@ class Materialliste {
      */
     onShow() {
         let section = document.querySelector("#materialliste").cloneNode(true);
-
+        console.log(this._app.MlSpeicher._speicher);
 	    return {
-button: 4,
+            button: 4,
 	        className: "materialliste",
 	        main: section.querySelectorAll("main > *"),
 	    };

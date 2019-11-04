@@ -75,6 +75,7 @@ class Suchen {
            
            parentNode.appendChild(div);
         });
+        this._app._router.updatePageLinks();
     }
 }
 
