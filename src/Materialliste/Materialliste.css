@@ -148,3 +148,13 @@
 
 }
 }
+
+@media:print{
+	background: none;
+	background-color: white;
+
+ .header a{
+	 display: none;
+
+	}
+}
