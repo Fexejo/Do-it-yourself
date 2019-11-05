@@ -38,7 +38,7 @@ class MateriallisteAnzeige {
 		newEntry.querySelector("span").lastChild.textContent = doc.data().bezeichnung;
 		
 		// Anleitung einsetzen
-		newEntry.querySelector(".Anleitung span").lastChild.textContent = doc.data().anleitung;
+		newEntry.querySelector(".Anleitung span").lastChild.textContent = doc.data().anleitung.replace(/\n/g, "<br>");
 		
 		// Materialien und Preisberechnung
 		

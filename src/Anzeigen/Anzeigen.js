@@ -28,13 +28,12 @@ class Anzeigen {
      */
     onShow() {
         let section = document.querySelector("#anzeigen").cloneNode(true);
-
-        this.Kommentarerstellen();
         
         // Datenbankanfrage mit der uebergebenen ID absetzen
         this._app._db.getById(this._id).then(doc => {
             // Daten zum Anzeigen geladen
-            console.log(doc.data());
+            this._doc = doc;
+            this._comments = doc.data().comment;
 
             // main Bereich zum manipulieren getten
             let main = document.querySelector(".anzeigen");
@@ -99,6 +98,18 @@ class Anzeigen {
                     });
                 })
             });
+            
+            // schon vorhandene Kommentare anzeigen
+            let comments = doc.data().comment;
+            if (Array.isArray(comments)) {
+                // schon Kommentare vorhanden
+                for (let i in comments) {
+                    this.showComment(comments[i].text, comments[i].zeit);
+                }
+            }
+            
+            // Kommentarfunktion aktivieren
+            this.Kommentarfunktion(main.querySelector("#Kommentarbody"));
         });
 
 
@@ -126,43 +137,83 @@ class Anzeigen {
      * @return {String} Titel für die Titelzeile des Browsers
      */
     get title() {
-        return "Suche" + this._id;
+        return "Anzeigen";
     }
 
 
-    Kommentarerstellen(){
-
-
-    document.querySelector("input").addEventListener("click", submitListener);
-    window.addEventListener("keypress", (event) => {
-      console.log(event.key + " pressed");
-      if(event.key == 'Enter') {
-        event.preventDefault();
-        submitListener();
-      }
-    });
-
-
-  console.log("js found");
-
-  let submitListener = (event) => {
-    let text = document.querySelector("#Kommentarbody textarea").value;
-    console.log(text);
-    let commi = document.getElementById("comments");
-    let newComment = document.createElement("commi");
-    newComment.classList.remove ("hellbraun");
-    newComment.classList.add ("braun");
-    let time = document.createElement("time");
-
-    newComment.textContent = text;
-    let now = new Date();
-    time.textContent = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
-
-    newComment.appendChild(time);
-    comments.appendChild(newComment);
-    document.querySelector("textarea").value="";
-  }
-}
+    Kommentarfunktion(kb){
+        let submitListener = (event) => {
+            // Text aus textarea speichern und diese dann leer machen
+            let text = kb.querySelector("textarea").value;
+            kb.querySelector("textarea").value="";
+            
+            let now = new Date();
+            let zeit = now.getDate() + "." + now.getMonth() + "." + now.getFullYear() + " um " + now.getHours() + ":" + now.getMinutes() + " Uhr";
+            
+            // Checken, ob Kommentar leer ist, wenn ja, abbrechen
+            if (text == "") return false;
+            
+            // Kommentar anzeigen
+            this.showComment(text, zeit);
+            
+            // Kommentar in DB speichern
+            this.saveComment(text, zeit);
+            
+        }
+        
+        
+        // Listener fuer den Button registrieren
+        kb.querySelector("input").addEventListener("click", submitListener);
+        
+        // Listener fuer die Enter-Taste registrieren
+        kb.querySelector("textarea").addEventListener("keypress", (event) => {
+          
+          if(event.key == 'Enter') {
+            event.preventDefault();
+            submitListener();
+          }
+        });
+    }
+    
+    showComment(text, zeitString) {
+        // Die neuen Elemente createn
+        let newComment = document.createElement("comment");
+        newComment.classList.add("braun");
+        let time = document.createElement("time");
+        
+        // Text einfuegen
+        newComment.textContent = text;
+        
+        // Datum + Zeit einfuegen
+        time.textContent = zeitString;
+        newComment.appendChild(time);
+        
+        // Kommentar einhaengen
+        let cDiv = document.querySelector("#comments");
+        cDiv.insertBefore(newComment, cDiv.firstChild);
+    }
+    
+    saveComment(t, zeitString) {
+        // Neuen Kommentar in die DB hinzufuegen
+        
+        // Pruefung, ob schon Array in Doc vorhanden ist
+        if (!Array.isArray(this._comments)) {
+            this._comments = [];
+        }
+        
+        // Kommentar in Doc einfuegen
+        this._comments.push({text: t, zeit: zeitString});
+        
+        // Doc mit neuem Kommentar bestuecken und in der DB updaten
+        let newDoc = this._doc.data();
+        newDoc.comment = this._comments
+        this._app._db.update(this._id, newDoc).then(r => {
+            return true;
+        }).catch(e => {
+            this._app.overlay.showAlert("Fehler beim Speichern des Kommentars.");
+        });
+        
+    }
 
 }
 

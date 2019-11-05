@@ -28,8 +28,9 @@ class Materialliste {
      */
     onShow() {
         let section = document.querySelector("#materialliste").cloneNode(true);
-        console.log(this._app.MlSpeicher._speicher);
+        
         let anzeige = new MateriallisteAnzeige(this._app, section.querySelector("#MlEintraege"));
+        
 	    return {
             button: 4,
 	        className: "materialliste",
