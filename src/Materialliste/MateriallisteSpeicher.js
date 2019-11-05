@@ -46,6 +46,10 @@ class MateriallisteSpeicher {
 			return true;
 		}
 	}
+	
+	get () {
+		return this._speicher;
+	}
 }
 
 export default MateriallisteSpeicher;

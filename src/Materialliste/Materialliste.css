@@ -31,17 +31,17 @@
 	display: inline-block;
 	width: 8em;
 }
-.materialliste #Bezeichnung{
+.materialliste .Bezeichnung{
 	display: initial;
 }
 .materialliste table{
 	margin-top: 1.5em;
 }
-.materialliste #Preismöbel{
+.materialliste .Preismoebel{
 	margin-top: 0.8em;
 	margin-bottom: 1.5em;
 }
-.materialliste #Anleitung span{
+.materialliste .Anleitung span{
 	display: initial;
 }
 .materialliste #Gesamtpreis{
@@ -55,7 +55,7 @@
 
 }
 
-.materialliste #Listenanzeige{
+.materialliste .Listenanzeige{
 	background-color:rgba(51,51,51,0.2);
 	padding-left: 10px;
 	padding-top: 10px;
@@ -88,7 +88,7 @@
 	.materialliste span {
 		display: none;
 	}
-	.materialliste #Listenanzeige{
+	.materialliste .Listenanzeige{
 		background-color:rgba(51,51,51,0.2);
 		/*background-color: rgba(240,240,240,0.5);*/
 		padding-left: 20px;
@@ -133,7 +133,7 @@
 	font-size: 20pt;
 
 }
-.materialliste #Listenanzeige{
+.materialliste .Listenanzeige{
 	background-color:rgba(51,51,51,0.2);
 	padding-left: 15px;
 	padding-top: 15px;

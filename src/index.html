@@ -197,7 +197,7 @@
 				<img src="./Bilder/Hammer.PNG"alt="Test">
 			</div>
 
-			<h3>Materialliste</h3>
+			<h3>Benötigtes Material</h3>
 			<div id = "Materialtabelle">
 				<table>
 					<thead>
@@ -249,9 +249,15 @@
 	<section id="materialliste" class="hidden">
 		<main>
 			<h2>Materialliste</h2>
-
-			<div id = "Listenanzeige">
-			<span id = "Bezeichnung"><b>Bezeichnung: </b>Stuhl Erna</span>
+			<div id="MlEintraege">
+			</div>
+		<div id = "Gesamtpreis">
+			<b>Gesamtpreis: 500€</b>
+		</div>
+		</main>
+		<template id="MlEintrag">
+		<div class="Listenanzeige">
+			<span class="Bezeichnung"><b>Bezeichnung: </b>Stuhl Erna</span>
 					<!--Tabelle die die Materialien anzeigt-->
 			<table>
 				<thead>
@@ -275,18 +281,15 @@
 			 </tr>
 		 </tbody>
 			</table>
-			<div id = "Preismöbel">
+			<div class="Preismoebel">
 				 <b>Möbelstückpreis gesamt:</b> 150,00€
 			 </div>
-			<div id = "Anleitung">
-				<span><b>Anleitung: </b>
-					<br>Schrauben, Hämmern -> Fertig!</br></span>
+			<div class="Anleitung">
+				<span><b>Anleitung: </b><br>
+					Schrauben, Hämmern -> Fertig!</span>
 			</div>
 		</div>
-		<div id = "Gesamtpreis">
-			<b>Gesamtpreis: 500€</b>
-		</div>
-		</main>
+		</template>
 	</section>
 
 	<div id="overlay" class="hidden">Overlay</div>

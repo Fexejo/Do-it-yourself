@@ -96,7 +96,7 @@ class EditierenForm {
 		// Liste der Materialien
 		let tbody = c.querySelector("tbody");
 		tbody.innerHTML = "";
-		console.log(data.material);
+		
 		for (let i in data.material) {
 			let m = data.material[i];
 			let newRow = this._tr.cloneNode(true);
