@@ -13,7 +13,7 @@ class Suchen {
      */
     constructor(app, searchString) {
         this._app = app;
-        this._searchString = searchString;
+        this._searchString = searchString.toLowerCase();
     }
 
     /**
@@ -28,9 +28,20 @@ class Suchen {
     onShow() {
         let section = document.querySelector("#suchen").cloneNode(true);
         
-        //this._app.overlay.showAlert("Die Datenbank ist noch leer. Füge erst Möbelstücke hinzu, damit Du suchen kannst.");
-        this._app._db.getAll().then((data) => {
-           this.showSearchResults(data);
+        // Listener fuer das Suchfeld adden
+        section.querySelector("input").addEventListener("keyup", e => {
+           this._searchString = e.srcElement.value.toLowerCase();
+           this.showSearchResults();
+        });
+        
+        this._app._db.getAll().then(entries => {
+           this._data = [];
+           entries.forEach(doc => {
+               let entry = doc.data();
+               entry.id = doc.id;
+               this._data.push(entry);
+           });
+           this.showSearchResults();
         });
         
         return {
@@ -60,22 +71,38 @@ class Suchen {
         return "Suchen: " + this._searchString;
     }
     
-    showSearchResults(res) {
+    showSearchResults() {
+        // Mit SearchString filtern
+        let res = this.filter();
+        
         let template = document.getElementById("suchergebnis").content.cloneNode(true);
         let parentNode = document.getElementById("Suchanzeige");
+        parentNode.innerHTML = "";
         
-        res.forEach(doc => {
+        res.forEach(entry => {
            let div = template.cloneNode(true);
-           div.querySelector("a").href = "/anzeigen/" + doc.id;
-           div.querySelector("img").alt = doc.data().bezeichnung;
+           div.querySelector("a").href = "/anzeigen/" + entry.id;
+           div.querySelector("img").alt = entry.bezeichnung;
            
            let spans = div.querySelectorAll("span");
-           spans[0].innerHTML = doc.data().bezeichnung;
-           spans[1].innerHTML = doc.data().kategorie;
+           spans[0].innerHTML = entry.bezeichnung;
+           spans[1].innerHTML = entry.kategorie;
            
            parentNode.appendChild(div);
         });
         this._app._router.updatePageLinks();
+    }
+    
+    filter() {
+        let data = this._data;
+        
+        return data.filter(e => {
+            
+            let kat = e.kategorie.toLowerCase().indexOf(this._searchString);
+            let bez = e.bezeichnung.toLowerCase().indexOf(this._searchString);
+            
+            return (kat >= 0 || bez >= 0) ? true : false;
+        });
     }
 }
 
