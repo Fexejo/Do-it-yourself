@@ -28,11 +28,21 @@ class Suchen {
     onShow() {
         let section = document.querySelector("#suchen").cloneNode(true);
         
+        // uebergebene Suchanfrage in das Suchfeld eintragen
+        section.querySelector("input").value = this._searchString;
+        
         // Listener fuer das Suchfeld adden
         section.querySelector("input").addEventListener("keyup", e => {
            this._searchString = e.srcElement.value.toLowerCase();
            this.showSearchResults();
         });
+        
+        // und noch ein Listener, der die Adresszeile des Browser aktualisieren soll
+        section.querySelector("input").addEventListener("blur", e => {
+           let text = e.srcElement.value;
+           history.pushState({}, "Do it Yourself! - Suchen - " + text, "/suchen/"+text);
+        });
+        
         
         this._app._db.getAll().then(entries => {
            this._data = [];
