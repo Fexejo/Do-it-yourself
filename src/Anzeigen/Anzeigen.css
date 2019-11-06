@@ -65,7 +65,7 @@ margin-right: 1em;
 }
 
 .anzeigen .hellbraun {
-  background-color: rgb(204, 102, 51, 0.7) !important;
+  background-color: rgb(51,51,51, 0.8)!important;
 }
 .anzeigen .braun {
   background-color: rgb(153, 51, 0, 0.7) !important;
@@ -114,6 +114,91 @@ margin-right: 1em;
 
 /* Aenderungen fuer Tablets */
 @media (min-width: 30em) and (orientation: landscape) {
+	.anzeigen #Kopf{
+		background-color: rgba(51,51,51,0.2);
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 30px;
+			margin-left: 20px;
+			margin-right: 20px;
+			}
+
+	.anzeigen #Materialtabelle{
+		background-color: rgba(51,51,51,0.2);
+		margin-bottom: 0;
+		padding-left: 270px;
+		padding-top: 10px;
+		padding-bottom: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.anzeigen h2{
+		background-color: rgba(51,51,51,0.2);
+		margin-bottom: 0;
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 100px;
+	}
+	.anzeigen h3{
+		background-color: rgba(51,51,51,0.2);
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 270px;
+		padding-top: 100px;
+		padding-bottom: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+}
+
+.anzeigen h4{
+	font-size: 17pt;
+
+}
+
+.anzeigen h5{
+	font-size: 17pt;
+	margin-left: 270px;
+}
+
+.anzeigen #Anleitung{
+	background-color: rgba(51,51,51,0.2);
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 270px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.anzeigen #Buttons {
+	background-color: rgba(51,51,51,0.2);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-bottom: 80px;
+	padding-left:270px;
+	margin-bottom: 80px;
+}
+
+.anzeigen #comments{
+	padding-left: 250px;
+}
+
+.anzeigen .hellbraun{
+		margin-left: 1px;
+		margin-top: 90px;
+		padding-left: 30px;
+		margin-right: 90px;
+}
+
+.anzeigen #Kommentarbody{
+	padding-left: 170px;
+	padding-bottom: 50px;
+}
 
 	.anzeigen th{
 		display: table-cell;
@@ -139,4 +224,88 @@ margin-right: 1em;
 
 /*  Aenderungen fuer Desktops */
 @media (min-width: 75em) {
+	.anzeigen #Kopf{
+		background-color: rgba(51,51,51,0.2);
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 30px;
+			margin-left: 20px;
+			margin-right: 20px;
+			}
+
+	.anzeigen #Materialtabelle{
+		background-color: rgba(51,51,51,0.2);
+		margin-bottom: 0;
+		padding-left: 270px;
+		padding-top: 10px;
+		padding-bottom: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.anzeigen h2{
+		background-color: rgba(51,51,51,0.2);
+		margin-bottom: 0;
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 100px;
+	}
+	.anzeigen h3{
+		background-color: rgba(51,51,51,0.2);
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 270px;
+		padding-top: 100px;
+		padding-bottom: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+}
+
+.anzeigen h4{
+	font-size: 17pt;
+
+}
+
+.anzeigen h5{
+	font-size: 17pt;
+	margin-left: 270px;
+}
+
+.anzeigen #Anleitung{
+	background-color: rgba(51,51,51,0.2);
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 270px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.anzeigen #Buttons {
+	background-color: rgba(51,51,51,0.2);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-bottom: 80px;
+	padding-left:270px;
+	margin-bottom: 80px;
+}
+
+.anzeigen #comments{
+	padding-left: 250px;
+}
+
+.anzeigen .hellbraun{
+		margin-left: 1px;
+		margin-top: 90px;
+		padding-left: 30px;
+		margin-right: 90px;
+}
+
+.anzeigen #Kommentarbody{
+	padding-left: 170px;
+	padding-bottom: 50px;
 }

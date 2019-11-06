@@ -18,6 +18,7 @@
 	margin-left: 20px;
 	text-decoration-line: underline;
 	margin-top: 60px;
+
 }
 
 .editieren img{
@@ -126,18 +127,20 @@
 	font-family: sans-serif;
 	color: inherit;
 	margin-top: 30px;
+	margin-left: 20px;
 }
 .editieren #textfeld2{
-	width: 270px;
+	width: 290px;
 	height:80px;
 	margin-top:5px;
 	background-color: rgba(240,240,240,8);
 	border: none;
 
+
 }
 .editieren #suchbutton{
 	margin-right:10px;
-	margin-left: 90px;
+	margin-left: 190px;
 	margin-top: 5px;
 }
 
@@ -273,7 +276,7 @@
 		margin-top: 10px;
 		margin-bottom: 25px;
 		padding-top: 25px;
-		margin-left: 50px;
+		margin-left: 25px;
 	}
 
 	.editieren #table{
@@ -422,7 +425,7 @@
 		margin-left: 20px;
 		text-decoration-line: underline;
 		margin-top: 90px;
-		margin-left: 60px;
+		margin-left: 25px;
 	}
 
 	.editieren img{
@@ -448,7 +451,6 @@
 	.editieren #textfeld{
 		width: 400px;
 		height:40px;
-		margin-top:5px;
 		background-color: rgba(240,240,240,0.8);
 		padding-left: 50px;
 		margin-left: 10px;
@@ -471,30 +473,32 @@
 		color: inherit;
 		margin-left: 20px;
 		margin-right: 20px;
-		margin-top: 9px;
 		padding-bottom:30px;
 		padding-left: 50px;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 	.editieren #Kalabel{
 		display: inline-block;
-		margin-top: 3px;
 		/* hier noch das Label verschieben, aber wie????*/
 	}
 
 	.editieren #durchsuchen{
 		margin-left: 200px;
 		background-color: rgba(240,240,240,0.8);
+		margin-top: 0;
 
 
 
 	}
 	.editieren #durchsuchen1{
 			background-color:rgba(51,51,51,0.2);
-			margin-top: 10px;
 			padding-top: 20px;
 			padding-bottom: 20px;
 			margin-left: 20px;
 			margin-right: 20px;
+			margin-top: 0;
+
 
 	}
 	.editieren h1{
@@ -505,11 +509,14 @@
 		margin-bottom: 25px;
 		padding-top: 25px;
 		margin-left: 50px;
+			margin-top: 0;
 	}
 
 	.editieren #table{
 		background-color: rgba(240,240,240,0.8);
 		margin-left: 40px;
+		margin-top: 0
+
 
 	}
 
@@ -518,6 +525,7 @@
 		margin-left: 20px;
 		margin-right: 20px;
 		padding-bottom: 30px;
+		margin-top: 0;
 
 	}
 .editieren th{
@@ -603,10 +611,10 @@
 		width: 600px;
 		height:200px;
 		margin-left: 40px;
-		margin-bottom: 5px;
 		background-color: rgba(240,240,240,0.8);
 		padding-left: 20px;
 		padding-top: 20px;
+		margin-top: 0;
 	}
 	.editieren #Anleitung{
 		background-color:rgba(51,51,51,0.2);
@@ -616,6 +624,7 @@
 		margin-top: 10px;
 		margin-left: 20px;
 		margin-right: 20px;
+		margin-top: 0;
 	}
 
 	.editieren #Anleitunglabel{
@@ -630,7 +639,7 @@
 	}
 	.editieren #suchbutton{
 		margin-right:150px;
-		margin-left:200px;
+		margin-left:600px;
 		margin-top: 1px;
 		margin-bottom: 20px;
 	}

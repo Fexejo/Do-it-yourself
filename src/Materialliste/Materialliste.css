@@ -65,7 +65,7 @@
 }
 
 /* Aenderungen fuer Tablets */
-@media (min-width: 30em) and (orientation: landscape){
+@media (min-width: 992px) /*(min-width: 30em) and (orientation: landscape)*/{
 	.materialliste {
 		background-color: rgba(200, 200,200, 0.7);
 		margin-left: 15px;

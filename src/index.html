@@ -170,7 +170,7 @@
 			<h2>Möbelstück suchen</h2>
 
 				<div id = Suchleiste>
-				<lable for="suche">Suchbegriff eingeben: </lable>
+				<lable id= "suche1" for="suche">Suchbegriff eingeben: </lable>
 				<input id="suche" type="search"  placeholder="Suche...">
 				</div>
 
@@ -197,7 +197,7 @@
 				<img src="./Bilder/Hammer.PNG"alt="Test">
 			</div>
 
-			<h3>Benötigtes Material</h3>
+			<h3>Benötigtes Material:</h3>
 			<div id = "Materialtabelle">
 				<table>
 					<thead>
@@ -223,7 +223,7 @@
 				</table>
 			</div>
 			<div id ="Anleitung">
-				<span><b>Anleitung:</b></span>
+				<h4>Anleitung:</h4>
 				<p>Schleifen, Schrauben, Streichen -> Fertig!</p>
 			</div>
 
@@ -235,11 +235,13 @@
 
 <!--Kommentarfunktion innerhalb der Anzeige-->
 
+	<h5> Kommentare: </h5>
 			<div id="comments">
-				<comment class="hellbraun">Kommentar verfassen</comment>
+
 			</div>
 			<div id="Kommentarbody">
-				<textarea name="name" rows="8" cols="80"></textarea>
+				<comment class="hellbraun">Kommentar verfassen</comment>
+				<textarea name="name" placeholder="Bitte Kommentar eingeben..." rows="8" cols="80"></textarea>
 				<input type="button" value="Abschicken">
 		</div>
 		</main>

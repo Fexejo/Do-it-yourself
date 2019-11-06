@@ -11,11 +11,31 @@
 	width: 100%;
 	display: inline-block;
 }
+
+.suchen #suche{
+	width: 300px;
+	height: 35px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+.suchen #Suchleiste{
+	margin-left: 20px;
+}
+
+
 .suchen h2 {
-	font-size: 18pt;
+	font-size: 14pt;
 	color: inherit;
+	text-decoration-line: underline;
 	margin-top: 2.5em;
 	margin-left: 20px;
+	margin-bottom: 40px;
+}
+
+.suchen #Suchanzeige{
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .suchen #Button{
