@@ -17,6 +17,7 @@
     "shelljs": "^0.8.3"
   },
   "dependencies": {
-    "firebase": "^7.2.1"
+    "firebase": "^7.2.1",
+    "firestore": "^1.1.6"
   }
 }

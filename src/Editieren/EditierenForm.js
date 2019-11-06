@@ -39,8 +39,26 @@ class EditierenForm {
 		if (this._data) {
 			// Formularinhalte vorhanden -> einfuegen
 			c = this._fill(c);
-			
 		}
+		
+		// Listener fuer den Upload
+		c.querySelector("input[type=file]").addEventListener("change", e => {
+			let files = e.srcElement.files;
+			console.log(files);
+			let reader = new FileReader();
+			reader.addEventListener("load", e => {
+				let img = document.createElement("img");
+				img.src = e.target.result;
+				document.querySelector("body").appendChild(img);
+			})
+			reader.readAsDataURL(files[0]);
+			this._app._db.uploadFile("testname.png", files[0]).then(e => {
+				console.log("hochgeladen");
+				console.log(e);
+			});
+		});
+		
+		
 		// EventListener auf Submit Button registrieren
 		c.querySelector("#suchbutton").addEventListener("click", e => {
 			e.preventDefault();

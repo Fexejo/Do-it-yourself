@@ -3,6 +3,8 @@
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+import "firebase/storage";
+
 
 
 
@@ -22,6 +24,7 @@ class Db {
 		  firebase.initializeApp(firebaseConfig);
 		  
 		  this._db = firebase.firestore();
+		  this._storage = firebase.storage();
 	}
 	
 	getAll () {
@@ -42,6 +45,14 @@ class Db {
 	
 	update(id, data) {
 		return this._db.collection("moebel").doc(id).update(data)
+	}
+	
+	uploadFile(filename, file) {
+		return this._storage.ref().child("img/" + filename).put(file);
+	}
+	
+	getFileUrl(filename) {
+		return this._storage.ref().child("img/" + filename).getDownloadURL();
 	}
 }
 
