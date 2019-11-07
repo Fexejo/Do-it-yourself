@@ -7,6 +7,10 @@
 	font-size: 50pt;
 }
 
+.materialliste .Listenanzeige a{
+	width: 100%;
+}
+
 /* Aenderungen fuer Tablets */
 @media (min-width: 30em) and (orientation: landscape), (min-width: 75em) {
 
