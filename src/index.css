@@ -74,9 +74,12 @@ body{
 	background-color:rgba(51,51,51,0.8);
 
 }
+#tablet, #desktop {
+	display: none;
+}
 
 /* Aenderungen fuer Tablets */
-@media (min-width: 30em) and (orientation: landscape) {
+@media (min-width: 30em) and (orientation: landscape), (min-width: 75em) {
 #app header {
 	background-color: red;
 	height: 4em;
@@ -92,7 +95,12 @@ body{
 	padding-top: 25px;
 	font-size: 9pt;
 }
-
+#tablet {
+	display: inline;
+}
+#mobile {
+	display: none;
+}
 }
 
 /*  Aenderungen fuer Desktops */
@@ -113,6 +121,13 @@ margin-top: 10px;
 margin-bottom: 10px;
 width:2.5em;
 border: 0.2em white solid;
+}
+
+#desktop {
+	display: inline;
+}
+#tablet {
+	display: none;
 }
 
 }

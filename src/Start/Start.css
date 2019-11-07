@@ -77,7 +77,7 @@ background-color:rgba(240,240,240,0.5);
 
 
 /* Aenderungen fuer Tablets */
-@media (min-width: 30em) and (orientation: landscape) {
+@media (min-width: 30em) and (orientation: landscape), (min-width: 75em) {
   .start {
   /*background-color: #F2F5A9;*/
   font-size: 15px;

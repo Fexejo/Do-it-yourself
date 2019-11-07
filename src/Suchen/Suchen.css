@@ -59,7 +59,7 @@
 
 
 /* Aenderungen fuer Tablets */
-@media (min-width: 992px) {
+@media (min-width: 30em) and (orientation: landscape), (min-width: 75em) {
 .suchen h2{
 	font-size: 20pt;
 	color: inherit;
@@ -92,9 +92,10 @@
 	background-color: rgba(240,240,240,0.88);
 	border: none;
 }
+}
 
 /*  Aenderungen fuer Desktops */
-@media (min-width: 1200px) {
+@media (min-width: 75em) {
 
 .suchen h2{
 	font-size: 19pt;
@@ -126,5 +127,4 @@
 	width: 60%;
 	margin-left: 16em;
 }
-
 }
