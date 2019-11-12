@@ -69,7 +69,7 @@ font-size: 12pt;
 	display: inline;
 }
 /* Aenderungen fuer Tablets */
-@media(min-width: 30em) and (orientation: landscape){
+@media (min-width: 30em) and (orientation: landscape), (min-width: 75em) {
 
 .materialliste {
 	background-color: rgba(200, 200,200, 0.7);
@@ -118,6 +118,7 @@ font-size: 12pt;
 /*  Aenderungen fuer Desktops */
 @media (min-width: 75em) {
 	.materialliste {
+		display: 
 		background-color: rgba(200, 200,200, 0.7);
 		margin-left: 20px;
 		margin-right: 20px;
