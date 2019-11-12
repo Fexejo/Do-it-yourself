@@ -61,9 +61,9 @@
 /* Aenderungen fuer Tablets */
 @media (min-width: 30em) and (orientation: landscape), (min-width: 75em) {
 .suchen h2{
-	font-size: 20pt;
+	font-size: 19pt;
 	color: inherit;
-	margin-top: 2.5em;
+	margin-top: 3em;
 	margin-left: 20px;
 }
 .suchen #Suchleiste{

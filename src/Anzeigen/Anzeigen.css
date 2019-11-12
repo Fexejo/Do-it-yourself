@@ -8,10 +8,14 @@
 	margin-right: 1em;
 }
 .anzeigen h2{
-	font-size: 5pt;
+	font-size: 20pt;
+	margin-top: 50px;
+	text-align: center;
 }
 .anzeigen h3{
 	margin-top: 2em;
+	font-size: 12pt;
+	margin-left: 2.5em;
 }
 .anzeigen img{
 	width: 14em;
@@ -29,12 +33,17 @@
 	display: inline-block;
 	width: 8em;
 }
+.anzeigen #Kopf{
+	text-align: center;
+}
 .anzeigen #Materialtabelle{
 	margin-bottom: 2em;
+	margin-left: 2em;
 }
 .anzeigen #Anleitung{
 	margin-bottom: 1em;
 	font-size: 12pt;
+	margin-left: 2em;
 }
 .anzeigen #Anleitung span{
 	font-size: 14pt;
@@ -42,8 +51,12 @@
 }
 .anzeigen #Buttons{
 	margin-bottom: 0.5em;
+	margin-left: 2em;
 }
 
+.anzeigen h5{
+	margin-left: 2em;
+}
 /* Kommentarfunktion innerhalb der Anzeigenseite*/
 
 
@@ -51,6 +64,7 @@
   width: 70%;
   margin-left: 1em;
   display: block;
+	padding-bottom: 4em;
 }
 
 
@@ -63,10 +77,22 @@
 	width: 70%;
 	margin-left: 1em;
 	margin-top: 1.5em;
+	font-size: 10pt;
 }
 
 .anzeigen .hellbraun {
   background-color: rgb(51,51,51, 0.8)!important;
+	width: 140px;
+	height: 20px;
+	margin-top: 40px;
+
+
+}
+
+.anzeigen #Buttonk{
+	width: 90px;
+	height: 20px;
+	margin-left: 170px;
 }
 .anzeigen .braun {
   background-color: rgb(153, 51, 0, 0.7) !important;
@@ -75,8 +101,9 @@
 	padding: 0.5em;
 	color: white;
 	margin-bottom: 1em;
-	width: 70%;
-	margin-left: 1em;
+	width: 230px;
+	height: 30px;
+	margin-left: 2.5em;
 	margin-top: 1.5em;
 }
 
@@ -87,20 +114,20 @@
   border: 2px #b0bec5 solid;
   padding: 1em;
   border-radius: 1em;
+	margin-left: 1.5em;
 }
 
 .anzeigen input {
   display: grid;
   background-color: rgba(51,51,51, 0.8);
 	color: white;
-  padding: 1em;
   border-radius: 0.5em;
   box-shadow: none;
   border: none;
   font-weight: bold;
-  margin-right: 1em;
   margin-top: 2ex;
-	margin-bottom: 1em;
+	margin-bottom: 4em;
+	font-size: 9pt;
 }
 .anzeigen input:hover {
   background-color: #00b2cc;
@@ -122,12 +149,7 @@ font-family: sans-serif;
 margin-left: 1em;
 margin-right: 1em;
 }
-.anzeigen h2{
-	font-size: 25pt;
-}
-.anzeigen h3{
-	margin-top: 2em;
-}
+
 .anzeigen img{
 	width: 14em;
 	height: 12em;
@@ -219,10 +241,12 @@ margin-right: 1em;
 }
 
 .anzeigen .hellbraun{
-		margin-left: 1px;
+		margin-left: 30px;
 		margin-top: 90px;
 		padding-left: 30px;
 		margin-right: 90px;
+		width: 200px;
+		height: 20px;
 }
 
 .anzeigen #Kommentarbody{
@@ -248,6 +272,38 @@ margin-right: 1em;
 	}
 	.anzeigen comment {
 		width: 30%;
+		font-size: 12pt;
+
+	}
+	.anzeigen input {
+	  display: grid;
+	  background-color: rgba(51,51,51, 0.8);
+		color: white;
+	  border-radius: 0.5em;
+	  box-shadow: none;
+	  border: none;
+	  font-weight: bold;
+	  margin-top: 2ex;
+		margin-bottom: 4em;
+		font-size: 11pt;
+	}
+	.anzeigen #Buttonk{
+		width: 150px;
+		height: 30px;
+		margin-left: 500px;
+	}
+
+	.anzeigen .braun {
+	  background-color: rgb(153, 51, 0, 0.7) !important;
+		display: inherit;
+		border-radius: 0.5em;
+		padding: 0.5em;
+		color: white;
+		margin-bottom: 1em;
+		width: 550px;
+		height: 60px;
+		margin-left: 2.5em;
+		margin-top: 1.5em;
 	}
 
 }
@@ -353,5 +409,48 @@ margin-right: 1em;
 .anzeigen #Kommentarbody{
 	padding-left: 170px;
 	padding-bottom: 50px;
+}
+.anzeigen comment {
+	width: 30%;
+	font-size: 12pt;
+
+}
+.anzeigen input {
+	display: grid;
+	background-color: rgba(51,51,51, 0.8);
+	color: white;
+	border-radius: 0.5em;
+	box-shadow: none;
+	border: none;
+	font-weight: bold;
+	margin-top: 2ex;
+	margin-bottom: 4em;
+	font-size: 11pt;
+}
+.anzeigen #Buttonk{
+	width: 150px;
+	height: 30px;
+	margin-left: 800px;
+}
+
+.anzeigen .braun {
+	background-color: rgb(153, 51, 0, 0.7) !important;
+	display: inherit;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	color: white;
+	margin-bottom: 1em;
+	width: 550px;
+	height: 60px;
+	margin-left: 2.5em;
+	margin-top: 1.5em;
+}
+anzeigen .hellbraun{
+	
+		margin-top: 90px;
+		padding-left: 30px;
+		margin-right: 90px;
+		width: 200px;
+		height: 20px;
 }
 }
