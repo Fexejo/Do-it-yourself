@@ -47,6 +47,12 @@ class Anzeigen {
             // Anleitung  in den p des #Anleitung-DIV
             main.querySelector("#Anleitung > p").innerHTML = doc.data().anleitung.replace(/\n/g, "<br>");
 
+            // Bild einbinden
+            this._app._db.getFileUrl(doc.id + "." + doc.data().bildSuffix).then(url => {
+                main.querySelector("#Kopf > img").src = url;
+            });
+
+
             // Liste der Materialien
             let tbody = main.querySelector("tbody");
             let tr = tbody.querySelector("tr").cloneNode(true);

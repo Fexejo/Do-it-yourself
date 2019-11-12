@@ -93,6 +93,12 @@ class Suchen {
            let div = template.cloneNode(true);
            div.querySelector("a").href = "/anzeigen/" + entry.id;
            div.querySelector("img").alt = entry.bezeichnung;
+
+            // Bild einbinden
+            if (entry.bildSuffix) {
+                this._insertImage(entry.id + "." + entry.bildSuffix, div.querySelector("img"));
+            }
+
            
            let spans = div.querySelectorAll("span");
            spans[0].innerHTML = entry.bezeichnung;
@@ -112,6 +118,12 @@ class Suchen {
             let bez = e.bezeichnung.toLowerCase().indexOf(this._searchString);
             
             return (kat >= 0 || bez >= 0) ? true : false;
+        });
+    }
+    
+    _insertImage(filename, imgElement) {
+        this._app._db.getFileUrl(filename).then(url => {
+            imgElement.src = url;
         });
     }
 }
