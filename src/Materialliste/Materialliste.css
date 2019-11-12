@@ -28,6 +28,11 @@
 	color: black
 }
 
+.materialliste a {
+	text-decoration: none;
+	display: inline-blocK;
+	width: 100%
+}
 .materialliste td{
 	display: block;
 	font-size: 12pt;

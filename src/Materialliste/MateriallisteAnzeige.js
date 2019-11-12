@@ -29,10 +29,16 @@ class MateriallisteAnzeige {
 		});
 		// Gesamtpreis anzeigen
 		 document.querySelector("#Gesamtpreis b").innerHTML = "Gesamtpreis: " + this._gesamtpreis + " €";
+		 
+		 // Links updaten
+		 this._app._router.updatePageLinks();
 	}
 	
 	_addItem(doc) {
 		let newEntry = document.getElementById("MlEintrag").content.cloneNode(true);
+		
+		// Link zur Anzeigen Seite
+		newEntry.querySelector("a").href = "/anzeigen/" + doc.id;
 		
 		// Bezeichnung setzen
 		newEntry.querySelector("span").lastChild.textContent = doc.data().bezeichnung;
