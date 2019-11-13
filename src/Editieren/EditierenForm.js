@@ -12,7 +12,7 @@ class EditierenForm {
 				if (doc.exists) {
 					// Inhalte gefunden
 					this._data = doc;
-					console.log(this._data);
+					console.log(this._data.data());
 					this.show(document.getElementById("formDummy"));
 				} else {
 					// ID nicht in DB vorhanden
@@ -26,6 +26,7 @@ class EditierenForm {
 				}
 			}).catch(e => {
 				console.log("ERROR");
+				console.log(e);
 			});
 		}
 	}
@@ -51,11 +52,11 @@ class EditierenForm {
 				img.src = e.target.result;
 				document.querySelector("body").appendChild(img);
 			})
-			reader.readAsDataURL(files[0]);
+		/*	reader.readAsDataURL(files[0]);
 			this._app._db.uploadFile("testname.png", files[0]).then(e => {
 				console.log("hochgeladen");
 				console.log(e);
-			});
+			});*/
 		});
 		
 		
@@ -113,7 +114,9 @@ class EditierenForm {
 		
 		// Liste der Materialien
 		let tbody = c.querySelector("tbody");
-		tbody.innerHTML = "";
+		
+		// Wenn Materialien vorhanden, tbody leeren
+		if (data.material.length > 0) tbody.innerHTML = "";
 		
 		for (let i in data.material) {
 			let m = data.material[i];
@@ -140,21 +143,42 @@ class EditierenForm {
 		if (this._id) {
 			// vorhanden -> update
 			this._db.update(this._id, this.getData()).then(res => {
-				console.log(this);
-				this._app.overlay.showAlert("Daten wurden erfolgreich aktualisiert.", () => {
-					this._app.overlay._hide();
-					this._app._router.navigate("/anzeigen/" + this._id);
-				});
+				// Upload anstossen
+				if (this._imageToUpload) {
+					// Neues Bild muss hochgeladen werden
+					this._uploadImage(this._id).then(res => {
+						this._app.overlay.showAlert("Daten und Bild wurden erfolgreich aktualisiert.", () => {
+							this._app.overlay._hide();
+							this._app._router.navigate("/anzeigen/" + this._id);
+						});
+					})
+				} else {
+					this._app.overlay.showAlert("Daten wurden erfolgreich aktualisiert.", () => {
+						this._app.overlay._hide();
+						this._app._router.navigate("/anzeigen/" + this._id);
+					});
+				}
 			});
 			
 			
 		} else {
 			// neues doc anlegen
 			this._db.add(this.getData()).then(m => {
-				this._app.overlay.showAlert("Möbelstück wurde gespeichert.", () => {
-					this._app.overlay._hide();
-					this._app._router.navigate("/suchen");
-				});
+				// auf Bilder checken
+				if (this._imageToUpload) {
+					// Bild hochladen
+					this._uploadImage(m.id).then(res => {
+						this._app.overlay.showAlert("Möbelstück wurde gespeichert und Bild hochgeladen.", () => {
+							this._app.overlay._hide();
+						this._app._router.navigate("/suchen");
+					});
+					});
+				}else {
+					this._app.overlay.showAlert("Möbelstück wurde gespeichert.", () => {
+						this._app.overlay._hide();
+						this._app._router.navigate("/suchen");
+					});
+				}
 			}).catch(e => {
 				console.log("Error beim Saven von Data");
 				console.log(e);
@@ -170,7 +194,16 @@ class EditierenForm {
 		ret.anleitung = domEl.querySelector("#textfeld2").value;
 		ret.kategorie = domEl.querySelector("#auswahl").value;
 		
-		//  Bilder
+		//  Bild
+		if (domEl.querySelector("input[type=file]").files[0]) {
+			// Bild ausgeaehlt, Typ ermitteln
+			this._imageToUpload = domEl.querySelector("input[type=file]").files[0];
+			
+			// Dateiendung ausschneiden
+			this._imageFileExtension = this._imageToUpload.name.split(".").pop();
+			ret["bildSuffix"] = this._imageFileExtension;
+		}
+		
 		
 		// Material
 		ret.material = {};
@@ -197,6 +230,12 @@ class EditierenForm {
 		
 		
 		return ret;
+	}
+	
+	_uploadImage(id) {
+		console.log("trying upload");
+		let fn = id + "." + this._imageFileExtension;
+		return this._db.uploadFile(fn, this._imageToUpload);
 	}
 }
 
