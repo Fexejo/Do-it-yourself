@@ -1,12 +1,12 @@
 /* Alle Selektoren müssen mit .materialliste beginnen */
 .materialliste {
 	background-color: rgba(200, 200,200, 0.7);
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 1em;
+	margin-right: 1em;
 	font-size: 11pt;
-	padding-bottom: 10em;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-bottom: 5em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 .materialliste .Bezeichnung{
 	font-size: 13pt;
@@ -58,9 +58,10 @@
 
 .materialliste .Listenanzeige{
 	background-color:rgba(51,51,51,0.2);
-	padding-left: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 .materialliste .Preismoebel{
@@ -68,125 +69,64 @@ padding-top: 1em;
 padding-bottom: 1em;
 color: black;
 text-decoration: none;
-font-size: 12pt;
+font-style: italic;
+font-size: 13pt;
 }
-.materialliste .Anleitung{
+.materialliste .Anleitung span{
 	display: inline;
 }
 /* Aenderungen fuer Tablets */
 @media (min-width: 30em) and (orientation: landscape), (min-width: 75em) {
 
-.materialliste {
-	background-color: rgba(200, 200,200, 0.7);
-	margin-left: 20px;
-	margin-right: 20px;
-	font-size: 11pt;
-	padding-bottom: 10em;
-	padding-left: 15px;
-	padding-right: 15px;
+.materialliste h2{
+	font-size: 23pt;
 }
-.materialliste h2 {
-	font-family: sans-serif;
-	font-size: 19pt;
-	text-decoration-line: underline;
-	color: inherit;
-	margin-top: 3em;
-
-}
-.materialliste span{
-	display: inline-block;
-	width: 8em;
+.materialliste span {
+	display: none;
 }
 
-.materialliste #Gesamtpreis{
-	margin-top: 1.5em;
-	background-color:rgba(204,102,51,0.8);
-	padding-top: 0.7em;
-	padding-bottom: 0.7em;
-	padding-left: 190px;
-	text-align: right;
-	padding-right: 20px;
-	font-size: 15pt;
-
+.materialliste th{
+	display: table-cell;
+	font-size: 13pt;
+	padding-right: 2em;
+	text-align: left;
+	color: black
 }
+ .materialliste td{
+	 font-size: 13pt;
+ 	display: table-cell;
+ 	text-align: left;
+ }
+ .materialliste .Anleitung span{
+	 font-size: 12pt;
+ }
 
-.materialliste .Listenanzeige{
-	background-color:rgba(51,51,51,0.2);
-	padding-left: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
+ .materialliste .Preismoebel{
+	 font-size: 14pt;
+ }
 
+ .materialliste #Gesamtpreis{
+	 font-size: 15pt;
+ }
 }
 
 
 /*  Aenderungen fuer Desktops */
 @media (min-width: 75em) {
-	.materialliste {
-		display: 
-		background-color: rgba(200, 200,200, 0.7);
-		margin-left: 20px;
-		margin-right: 20px;
-		font-size: 19pt;
-		padding-bottom: 10em;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.materialliste h2 {
-		font-family: sans-serif;
-		font-size: 19pt;
-		text-decoration-line: underline;
-		color: inherit;
-		margin-top: 3em;
-
-	}
-
+.materialliste th{
+	font-size: 15pt;
+}
 .materialliste td{
-	display: block;
-	font-size: 11pt;
+	font-size: 15pt;
 }
-	.materialliste th{
-		display: none;
-		width: 5em;
-
-
-	}
-	.materialliste span{
-		display: inline-block;
-		width: 8em;
+.materialliste .Anleitung span{
+	font-size: 14pt;
 }
-	.materialliste .Bezeichnung{
-		display: initial;
-	}
-	.materialliste table{
-		margin-top: 1.5em;
-	}
-	.materialliste .Preismoebel{
-		margin-top: 0.8em;
-		margin-bottom: 1.5em;
-	}
-	.materialliste .Anleitung span{
-		display: initial;
+.materialliste .Preismoebel{
+	font-size: 16pt;
 }
-
-	.materialliste #Gesamtpreis{
-		margin-top: 1.5em;
-		background-color:rgba(204,102,51,0.8);
-		padding-top: 0.7em;
-		padding-bottom: 0.7em;
-		padding-left: 190px;
-		text-align: right;
-		padding-right: 20px;
-		font-size: 15pt;
-
-	}
-
-	.materialliste .Listenanzeige{
-		background-color:rgba(51,51,51,0.2);
-		padding-left: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
+.materialliste #Gesamtpreis{
+	font-size: 18pt;
+}
 
 	}
