@@ -55,7 +55,7 @@ class Materialliste {
      * @return {String} Titel für die Titelzeile des Browsers
      */
     get title() {
-        return "Materialliste (0)";
+        return "Materialliste (" + this._app.MlSpeicher.sizeOf() + ")";
     }
 }
 

@@ -60,7 +60,7 @@ class Editieren {
      * @return {String} Titel für die Titelzeile des Browsers
      */
     get title() {
-        return "Edit";
+        return "Hinzufügen/Bearbeiten";
     }
     
     save() {

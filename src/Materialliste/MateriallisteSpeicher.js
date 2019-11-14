@@ -4,7 +4,6 @@ class MateriallisteSpeicher {
 	constructor () {
 		// Leere Liste zur spaeteren Speicherung der IDs anlegen
 		this._speicher = [];
-		console.log("ML- Konstruktor");
 	}
 	
 	add (id) {
@@ -49,6 +48,10 @@ class MateriallisteSpeicher {
 	
 	get () {
 		return this._speicher;
+	}
+	
+	sizeOf() {
+		return this._speicher.length;
 	}
 }
 
